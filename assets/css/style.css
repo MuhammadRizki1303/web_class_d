@@ -1,0 +1,102 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.btn-cta {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.btn-cta:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.btn-cta:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.kelas {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.welcome {
+    font-size: 28px;
+    font-weight: 100 !important;
+}
+
+.bg-violet-100 {
+    background-color: #ede9fe !important;
+}
+
+.text-violet-600 {
+    color: #7c3aed;
+}
+
+.socials {
+    bottom: 5;
+}
+
+.collapse {
+    z-index: 99999 !important;
+}
+
+.card {
+    z-index: -99999 !important;
+}
+
+.card:hover {
+    transform: scale(105%) !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+}
+
+.card img:hover {
+    transform: rotate(2deg) !important;
+    transition: all !important;
+    transition-duration: 0.5s !important;
+}
+
+.card-text {
+    font-size: 15px !important;
+}
+
+.collapse {
+    right: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.active {
+    font-weight: bold;
+    color: #7c3aed !important;
+}
