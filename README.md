@@ -1,12 +1,7 @@
-# Web-Kelas-TI-1D
-Tugas Workshop Web Dasar
-Membuat Desain Sistem Informasi Kelas TI-1D Berbasis Website menggunakan Bootstrap
-
-# Kelompok 1
+# Web-class-d
+# Kelompok 3
 Anggota :
-1. A'fiyyah Salsabillah Nhazalta
-2. Febri Fannisa
-3. Muhammad Rafli Aulia
-4. Muhammad Rizki
-5. Rachel Ardana Putra Ginting
-
+1. Muhammad Rizki
+2. Zamhur
+3. Nurul Agustina
+4. Tri Kumala Sari
