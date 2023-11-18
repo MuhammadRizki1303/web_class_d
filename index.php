@@ -961,11 +961,11 @@
         <footer class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-0 py-5 my-2 border-top">
             <div class="col">
                 <a href="/" class="d-flex align-items-center mb-4 link-dark text-decoration-none">
-                    <h3 class="font-weight">TI-1D</h3>
+                    <h3 class="font-weight">TI-Class-D</h3>
                 </a>
                 <p class="text-muted lh-sm">Buket Rata, Lhokseumawe
                 </p>
-                <p class="text-muted lh-sm">&copy; Kelompok 1 WWD</p>
+                <p class="text-muted lh-sm">&copy; Kelompok 3 WW</p>
             </div>
 
             <div class="col ms-auto">

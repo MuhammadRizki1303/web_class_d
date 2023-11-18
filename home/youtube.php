@@ -29,38 +29,38 @@
 <body>
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">TI-1D</a>
+            <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="../index.html">Home</a>
+                        <a class="nav-link fw-semibold" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  fw-semibold" href="kegiatan.html">Kegiatan</a>
+                        <a class="nav-link  fw-semibold" href="kegiatan.php">Kegiatan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="prestasi.html">Prestasi</a>
+                        <a class="nav-link fw-semibold" href="prestasi.php">Prestasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="informasi.html">Informasi</a>
+                        <a class="nav-link fw-semibold" href="informasi.php">Informasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Kalender.html">Kalender</a>
+                        <a class="nav-link fw-semibold" href="Kalender.php">Kalender</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="youtube.html">Youtube</a>
+                        <a class="nav-link active" href="youtube.php">Youtube</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="berita.html">Berita</a>
+                        <a class="nav-link fw-semibold" href="berita.php">Berita</a>
                     </li>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="../auth/login.html">Login</a>
+                        <a class="nav-link fw-semibold" href="../auth/login.php">Login</a>
                     </li>
             </div>
         </div>
