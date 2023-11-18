@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="home/kegiatan.php">Kegiatan</a>
@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="auth/login.html">Login</a>
+                        <a class="nav-link fw-semibold" href="auth/login.php">Login</a>
                     </li>
             </div>
         </div>
@@ -75,7 +75,7 @@
         <div class="row bg-violet-100 p-4 py-5 d-flex justify-content-center align-items-center rounded">
             <div class="col-md-6">
                 <h5 class="fw-lighter text-muted" data-aos="fade-right">WELCOME TO</h5>
-                <h1 class="display-3 fw-bold" data-aos="fade-right">KELAS TI-1D</h1>
+                <h1 class="display-3 fw-bold" data-aos="fade-right">TI Class D</h1>
                 <p data-aos="fade-right">The future is for those who still believe in their beautiful dreams</p>
                 <p class="text-muted fs-6 d-flex gap-2 align-items-center py-3" data-aos="fade-right">Follow Us :
                     <i class="bi bi-instagram fs-4" data-aos="flip-left"></i>
@@ -961,11 +961,11 @@
         <footer class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-0 py-5 my-2 border-top">
             <div class="col">
                 <a href="/" class="d-flex align-items-center mb-4 link-dark text-decoration-none">
-                    <h3 class="font-weight">TI-1D</h3>
+                    <h3 class="font-weight">TI-Class-D</h3>
                 </a>
                 <p class="text-muted lh-sm">Buket Rata, Lhokseumawe
                 </p>
-                <p class="text-muted lh-sm">&copy; Kelompok 1 WWD</p>
+                <p class="text-muted lh-sm">&copy; Kelompok 3 WW</p>
             </div>
 
             <div class="col ms-auto">

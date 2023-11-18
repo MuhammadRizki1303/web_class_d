@@ -37,7 +37,34 @@
             <div class="col-md-4">
                 <div class="card px-2 py-1 form-login shadow-sm border-0 rounded-3">
                     <div class="card-body">
-                        <form action="/manage" method="post">
+                        <?php
+                            session_start();
+                            
+                            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                // Periksa apakah formulir dikirim
+                                $email = $_POST["email"];
+                                $password = $_POST["password"];
+
+                                // Gantilah ini dengan kredensial pengguna aktual Anda
+                                $adminUser = "admin@gmail.com";
+                                $adminPassword = "admin123";
+                                $regularUser = "user@gmail.com";
+                                $regularPassword = "user123";
+
+                                if ($email == $adminUser && $password == $adminPassword) {
+                                    $_SESSION["user"] = "admin";
+                                    header("Location: ../admin/dashboard.php");
+                                    exit();
+                                } elseif ($email == $regularUser && $password == $regularPassword) {
+                                    $_SESSION["user"] = "regular";
+                                    header("Location: ../index.php");
+                                    exit();
+                                } else {
+                                    echo "<p class='text-danger'>Username atau password salah</p>";
+                                }
+                            }
+                        ?>
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control rounded-3" name="email" id="email" autofocus>
@@ -47,17 +74,15 @@
                                 <input type="password" class="form-control rounded-3" name="password" id="password" required>
                             </div>
                             <div class="text-end">
-                                <a href="../admin/dashboard.html" class="btn btn-dark bg-slate-900 rounded-3">LOGIN</a>
+                                <button type="submit" class="btn btn-dark bg-slate-900 rounded-3">LOGIN</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <script src="../assets/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
