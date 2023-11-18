@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="home/kegiatan.php">Kegiatan</a>
@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="auth/login.html">Login</a>
+                        <a class="nav-link fw-semibold" href="auth/login.php">Login</a>
                     </li>
             </div>
         </div>
@@ -75,7 +75,7 @@
         <div class="row bg-violet-100 p-4 py-5 d-flex justify-content-center align-items-center rounded">
             <div class="col-md-6">
                 <h5 class="fw-lighter text-muted" data-aos="fade-right">WELCOME TO</h5>
-                <h1 class="display-3 fw-bold" data-aos="fade-right">KELAS TI-1D</h1>
+                <h1 class="display-3 fw-bold" data-aos="fade-right">TI Class D</h1>
                 <p data-aos="fade-right">The future is for those who still believe in their beautiful dreams</p>
                 <p class="text-muted fs-6 d-flex gap-2 align-items-center py-3" data-aos="fade-right">Follow Us :
                     <i class="bi bi-instagram fs-4" data-aos="flip-left"></i>
