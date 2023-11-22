@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Admin | Kelas TI-1D</title>
+   <title>Admin | Kelas TI_Class_D</title>
 
     <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
@@ -28,7 +28,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg text-white shadow" style="background-color: #7c3aed;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">IT ONE D</a>
+            <a class="navbar-brand text-white" href="#">TI_Class_D</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +43,7 @@
                         <ul class="dropdown-menu position-absolute top-0" style="right: 480px !important;">
                             <li><a class="dropdown-item" href="#">Home</a></li>
                             <hr>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="../index.php">Logout</a></li>
                         </ul>
                     </li>
                 </div>
@@ -64,19 +64,19 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav d-flex flex-column gap-3 py-3">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                                    <a class="nav-link" aria-current="page" href="dashboard.php">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pengguna.html">Pengguna</a>
+                                    <a class="nav-link" href="pengguna.php">Pengguna</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="anggota.html">Anggota</a>
+                                    <a class="nav-link" href="anggota.php">Anggota</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fw-bold" href="kegiatanprestasi.html">Kegiatan dan Prestasi</a>
+                                    <a class="nav-link active fw-bold" href="kegiatanprestasi.php">Kegiatan dan Prestasi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="informasi.html">Informasi</a>
+                                    <a class="nav-link" href="informasi.php">Informasi</a>
                                 </li>
                             </ul>
                         </div>
