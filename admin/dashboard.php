@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Admin | Kelas TI-1D</title>
+   <title>Admin | Kelas TI Class D</title>
 
     <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
@@ -28,7 +28,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg text-white shadow" style="background-color: #7c3aed;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">IT ONE D</a>
+            <a class="navbar-brand text-white" href="#">TI_Class_D</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,12 +40,25 @@
                                  src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6"
                                  alt="" width="32" class="rounded">
                         </a>
-                        <ul class="dropdown-menu position-absolute top-0" style="right: 480px !important;">
-                            <li><a class="dropdown-item" href="#">Home</a></li>
-                            <hr>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
+                            <div class="navbar-nav ms-auto position-relative">
+                                    <form method="post">
+                                        <button type="submit" name="logout" class="btn btn-link text-white">Logout</button>
+                                    </form>
+                            </div>
+                            <?php
+                            function logout() {
+                                session_unset();
+                                session_destroy();
+                                setcookie("user_role", "", time() - 3600, "/"); // Expire the cookie
+                            }
+                            
+                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
+                                logout();
+                                header("Location: ../auth/login.php");
+                                exit();
+                            }
+                            ?>
+                            </div>
                 </div>
             </div>
         </div>
@@ -67,16 +80,16 @@
                                     <a class="nav-link active fw-bold" aria-current="page" href="dashboard.html">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pengguna.html">Pengguna</a>
+                                    <a class="nav-link" href="pengguna.php">Pengguna</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="anggota.html">Anggota</a>
+                                    <a class="nav-link" href="anggota.php">Anggota</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="kegiatanprestasi.html">Kegiatan dan Prestasi</a>
+                                    <a class="nav-link" href="kegiatanprestasi.php">Kegiatan dan Prestasi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="informasi.html">Informasi</a>
+                                    <a class="nav-link" href="informasi.php">Informasi</a>
                                 </li>
                             </ul>
                         </div>

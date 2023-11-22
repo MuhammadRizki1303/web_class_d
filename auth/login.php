@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row justify-content-center mb-4">
             <div class="col text-center">
-                <img src="../assets/img/tid.png" alt="IT ONE D" height="50">
+                <img src="../assets/img/tid.png" alt="TI Class D" height="50">
             </div>
         </div>
         <div class="row justify-content-center">
@@ -39,7 +39,19 @@
                     <div class="card-body">
                         <?php
                             session_start();
+                            function logout() {
+                                session_unset();
+                                session_destroy();
+                                setcookie("user_role", "", time() - 3600, "/"); // Hapus cookie
+                            }
                             
+                            // Jika admin ingin logout
+                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
+                                logout();
+                                header("Location: ../auth/login.php");
+                                exit();
+                            }
+
                             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 // Periksa apakah formulir dikirim
                                 $email = $_POST["email"];
@@ -48,21 +60,24 @@
                                 // Gantilah ini dengan kredensial pengguna aktual Anda
                                 $adminUser = "admin@gmail.com";
                                 $adminPassword = "admin123";
-                                $regularUser = "user@gmail.com";
-                                $regularPassword = "user123";
 
                                 if ($email == $adminUser && $password == $adminPassword) {
                                     $_SESSION["user"] = "admin";
                                     header("Location: ../admin/dashboard.php");
                                     exit();
-                                } elseif ($email == $regularUser && $password == $regularPassword) {
-                                    $_SESSION["user"] = "regular";
-                                    header("Location: ../index.php");
-                                    exit();
+
                                 } else {
                                     echo "<p class='text-danger'>Username atau password salah</p>";
                                 }
                             }
+
+                            if (isset($_SESSION["user"])) {
+                                if ($_SESSION["user"] == "admin") {
+                                    echo "<p class='text-info'>Anda telah logout dari halaman admin. Silakan login kembali.</p>";
+                                    session_unset();
+                                    session_destroy();
+                            }
+                        }
                         ?>
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                             <div class="mb-3">
