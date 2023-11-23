@@ -43,7 +43,7 @@
                         <ul class="dropdown-menu position-absolute top-0" style="right: 480px !important;">
                             <li><a class="dropdown-item" href="#">Home</a></li>
                             <hr>
-                            <li><a class="dropdown-item" href="index.php">Logout</a></li>
+                            <li><a class="dropdown-item" href="../index.php">Logout</a></li>
                         </ul>
                     </li>
                 </div>
