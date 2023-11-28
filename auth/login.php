@@ -38,6 +38,7 @@
                 <div class="card px-2 py-1 form-login shadow-sm border-0 rounded-3">
                     <div class="card-body">
                         <?php
+                        require_once('koneksi.php');
                             session_start();
                             function logout() {
                                 session_unset();
@@ -63,9 +64,14 @@
 
                                 if ($email == $adminUser && $password == $adminPassword) {
                                     $_SESSION["user"] = "admin";
+                                    $date = date("Y-m-d H:i:s");
+                                    $sql = "INSERT INTO login (user, pass, tgl_isi) VALUES ('$email', '$password', '$date')";
+                                    if ($conn->query($sql) === TRUE) {
                                     header("Location: ../admin/dashboard.php");
                                     exit();
-
+                                } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                }
                                 } else {
                                     echo "<p class='text-danger'>Username atau password salah</p>";
                                 }
