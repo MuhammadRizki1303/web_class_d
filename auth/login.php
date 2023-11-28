@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas TI-1D</title>
+    <title>Kelas TI Class D</title>
 
     <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
 
@@ -59,19 +59,15 @@
                                 $password = $_POST["password"];
 
                                 // Gantilah ini dengan kredensial pengguna aktual Anda
+                                $id = 1;
                                 $adminUser = "admin@gmail.com";
                                 $adminPassword = "admin123";
-
-                                if ($email == $adminUser && $password == $adminPassword) {
+                                $sql = "SELECT * FROM login WHERE id='$id'";
+                                $result = $conn->query($sql);
+                                if ($result->num_rows > 0) {
                                     $_SESSION["user"] = "admin";
-                                    $date = date("Y-m-d H:i:s");
-                                    $sql = "INSERT INTO login (user, pass, tgl_isi) VALUES ('$email', '$password', '$date')";
-                                    if ($conn->query($sql) === TRUE) {
                                     header("Location: ../admin/dashboard.php");
                                     exit();
-                                } else {
-                                    echo "Error: " . $sql . "<br>" . $conn->error;
-                                }
                                 } else {
                                     echo "<p class='text-danger'>Username atau password salah</p>";
                                 }
