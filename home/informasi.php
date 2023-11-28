@@ -200,7 +200,7 @@
                 <div class="col-12 col-md-6 col-lg-12 mb-4 mt-5">
                     <div class="section-header text-center pb-5">
                         <p class="fw-semibold mb-0 text-violet-600">Subject Schedhule</p>
-                        <h2 class="fw-bold">Jadwal Mata Kuliah</h2>
+                        <h2 class="fw-bold">Jadwal Mata Kuliah - Semester 1</h2>
                     </div>
                 </div>
             </div>
@@ -265,6 +265,160 @@
                                 <li class="list-group-item">Algoritma Dan Struktur Data</li>
                                 <li class="list-group-item">Matematika Diskrit</li>
                                 <li class="list-group-item">Workshop Web Dasar</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-12 mb-4 mt-5">
+                <div class="section-header text-center pb-5">
+                    <p class="fw-semibold mb-0 text-primary">Subject Schedule</p>
+                    <h2 class="fw-bold">Jadwal Mata Kuliah - Semester 2</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="accordion border-0 shadow-sm" id="accordionExample">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
+                            Senin
+                        </button>
+                    </h2>
+                    <div id="seninsubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Praktikum Basis Data lanjut</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="selasasubject">
+                            Selasa
+                        </button>
+                    </h2>
+                    <div id="selasasubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Pemograman Web Dasar</li>
+                                <li class="list-group-item">Basis Data Lanjut </li>
+                                <li class="list-group-item">Praktikum Algoritma Dan Struktur Data</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="rabusubject">
+                            Rabu
+                        </button>
+                    </h2>
+                    <div id="rabusubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Pancasila Dan Kewarganegaraan</li>
+                                <li class="list-group-item">English For Academic Speaking</li>
+                                <li class="list-group-item">Organisasi Dan Arsitektur Komputer</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="kamissubject">
+                            Kamis
+                        </button>
+                    </h2>
+                    <div id="kamissubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Algoritma Dan Struktur Data</li>
+                                <li class="list-group-item">Matematika Diskrit</li>
+                                <li class="list-group-item">Workshop Web Dasar</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-12 mb-4 mt-5">
+                <div class="section-header text-center pb-5">
+                    <p class="fw-semibold mb-0 text-primary">Subject Schedule</p>
+                    <h2 class="fw-bold">Jadwal Mata Kuliah - Semester 3</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="accordion border-0 shadow-sm" id="accordionExample">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
+                            Senin
+                        </button>
+                    </h2>
+                    <div id="seninsubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Rekayasa Perangkat Lunak</li>
+                                <li class="list-group-item">Pemograman Web Lanjut</li>
+                                <li class="list-group-item">Konsep Jaringan Komputer</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="selasasubject">
+                            Selasa
+                        </button>
+                    </h2>
+                    <div id="selasasubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Pemograman Berbasis Object</li>
+                                <li class="list-group-item">Praktikum Metode Numerik </li>
+                                <li class="list-group-item">Praktikum Pemograman Berbasis Object</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="rabusubject">
+                            Rabu
+                        </button>
+                    </h2>
+                    <div id="rabusubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Bahasa Inggris 3</li>
+                                <li class="list-group-item">Workshop Web Lanjut</li>
+                                <li class="list-group-item">Aljabar Linear</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="kamissubject">
+                            Kamis
+                        </button>
+                    </h2>
+                    <div id="kamissubject" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Metode Numerik</li>
+                                <li class="list-group-item">Praktikum Konsep Jaringan Komputer</li>
                             </ol>
                         </div>
                     </div>
