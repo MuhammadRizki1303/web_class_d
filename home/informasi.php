@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas TI-1D</title>
+    <title>TI-Class-D</title>
 
     <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
 
@@ -29,10 +29,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">TI-Class_D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                data-aos="fade-up" data-aos-duration="200" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,7 +71,7 @@
         <div class="row mt-4 mb-4">
             <div class="col-md-7 mt-auto mb-3 mb-md-0">
                 <p class="text-violet-600 fw-medium mb-1 fs-5">Informasi Kelas</p>
-                <h1 class="fw-bold">Informasi Kelas TI-D</h1>
+                <h1 class="fw-bold">Informasi TI-Class-D</h1>
             </div>
             <div class="col-md-5 mt-auto">
                 <form action="" method="">
@@ -102,9 +100,7 @@
         <div class="row justify-content-between">
             <di class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#senin" aria-expanded="false" data-aos="fade-up" data-aos-duration="200"
-                        aria-controls="senin">
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#senin" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="senin">
                         Senin
                     </button>
                 </p>
@@ -123,9 +119,7 @@
             </di justify-content-betweenv>
             <di class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#selasa" aria-expanded="false" data-aos="fade-up" data-aos-duration="300"
-                        aria-controls="selasa">
+                    <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse" data-bs-target="#selasa" aria-expanded="false" data-aos="fade-up" data-aos-duration="300" aria-controls="selasa">
                         Selasa
                     </button>
                 </p>
@@ -144,9 +138,7 @@
             </di justify-content-betweenv>
             <div class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-warning w-100 text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#rabu" aria-expanded="false" data-aos="fade-up" data-aos-duration="400"
-                        aria-controls="rabu">
+                    <button class="btn btn-warning w-100 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#rabu" aria-expanded="false" data-aos="fade-up" data-aos-duration="400" aria-controls="rabu">
                         Rabu
                     </button>
                 </p>
@@ -164,8 +156,7 @@
             </div>
             <div class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#kamis"
-                        aria-expanded="false" data-aos="fade-up" data-aos-duration="500" aria-controls="kamis">
+                    <button class="btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#kamis" aria-expanded="false" data-aos="fade-up" data-aos-duration="500" aria-controls="kamis">
                         Kamis
                     </button>
                 </p>
@@ -184,9 +175,7 @@
             </div>
             <div class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-info text-white w-100" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#jumat" aria-expanded="false" data-aos="fade-up" data-aos-duration="600"
-                        aria-controls="jumat">
+                    <button class="btn btn-info text-white w-100" type="button" data-bs-toggle="collapse" data-bs-target="#jumat" aria-expanded="false" data-aos="fade-up" data-aos-duration="600" aria-controls="jumat">
                         Jum'at
                     </button>
                 </p>
@@ -220,8 +209,7 @@
             <div class="accordion border-0 shadow-sm" id="accordionExample">
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
                             Senin
                         </button>
                     </h2>
@@ -235,9 +223,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="selasasubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="selasasubject">
                             Selasa
                         </button>
                     </h2>
@@ -253,9 +239,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="rabusubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="rabusubject">
                             Rabu
                         </button>
                     </h2>
@@ -271,9 +255,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="kamissubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="kamissubject">
                             Kamis
                         </button>
                     </h2>
@@ -304,8 +286,7 @@
             <div class="accordion border-0 shadow-sm" id="accordionExample">
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
                             Senin
                         </button>
                     </h2>
@@ -319,9 +300,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="selasasubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="selasasubject">
                             Selasa
                         </button>
                     </h2>
@@ -337,9 +316,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="rabusubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="rabusubject">
                             Rabu
                         </button>
                     </h2>
@@ -355,9 +332,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="kamissubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="kamissubject">
                             Kamis
                         </button>
                     </h2>
@@ -387,8 +362,7 @@
             <div class="accordion border-0 shadow-sm" id="accordionExample">
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninsubject" aria-expanded="true" aria-controls="seninsubject">
                             Senin
                         </button>
                     </h2>
@@ -404,9 +378,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="selasasubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasasubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="selasasubject">
                             Selasa
                         </button>
                     </h2>
@@ -422,9 +394,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="rabusubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabusubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="rabusubject">
                             Rabu
                         </button>
                     </h2>
@@ -440,9 +410,7 @@
                 </div>
                 <div class="accordion-item border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up"
-                            data-aos-duration="200" aria-controls="kamissubject">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamissubject" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="kamissubject">
                             Kamis
                         </button>
                     </h2>
@@ -468,8 +436,7 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -526,7 +493,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
 </body>
