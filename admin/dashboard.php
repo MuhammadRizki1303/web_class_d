@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Admin | Kelas TI Class D</title>
+    <title>Admin | Kelas TI Class D</title>
 
     <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-  <!--icon-->
+    <!--icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- AOS Animate -->
@@ -35,32 +35,31 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto position-relative">
                     <li class="nav-item dropdown">
-                         <a class="nav-link text-white d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin <img
-                                 src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6"
-                                 alt="" width="32" class="rounded">
+                        <a class="nav-link text-white d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin <img src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6" alt="" width="32" class="rounded">
                         </a>
-                            <div class="navbar-nav ms-auto position-relative">
-                                    <form method="post">
-                                        <button type="submit" name="logout" class="btn btn-link text-white">Logout</button>
-                                    </form>
-                            </div>
-                            <?php
-                            function logout() {
-                                session_unset();
-                                session_destroy();
-                                setcookie("user_role", "", time() - 3600, "/"); // Expire the cookie
-                            }
-                            
-                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
-                                logout();
-                                header("Location: ../auth/login.php");
-                                exit();
-                            }
-                            ?>
-                            </div>
+                        <div class="navbar-nav ms-auto position-relative">
+                            <form method="post">
+                                <button type="submit" name="logout" class="btn btn-link text-white">Logout</button>
+                            </form>
+                        </div>
+                        <?php
+                        function logout()
+                        {
+                            session_unset();
+                            session_destroy();
+                            setcookie("user_role", "", time() - 3600, "/"); // Expire the cookie
+                        }
+
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
+                            logout();
+                            header("Location: ../auth/login.php");
+                            exit();
+                        }
+                        ?>
                 </div>
             </div>
+        </div>
         </div>
     </nav>
     <!-- Akhir Navbar -->
@@ -205,7 +204,7 @@
                 <div class="row">
                     <div>
                         <canvas id="myChart"></canvas>
-                      </div>
+                    </div>
                 </div>
             </div>
             <!-- Akhir Content -->
@@ -214,31 +213,34 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
-  const ctx = document.getElementById('myChart');
+    <script>
+        const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni','Agustus', 'September', 'Oktober', 'November', 'Desember'],
-      datasets: [{
-        label: '# of Kegiatan dan Prestasi  ',
-        data: [0, 0, 3, 0, 0, 0, 0, 0, 1, 0, 1],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Agustus', 'September', 'Oktober',
+                    'November', 'Desember'
+                ],
+                datasets: [{
+                    label: '# of Kegiatan dan Prestasi  ',
+                    data: [0, 0, 3, 0, 0, 0, 0, 0, 1, 0, 1],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

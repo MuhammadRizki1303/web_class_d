@@ -36,9 +36,7 @@
                 <div class="navbar-nav ms-auto position-relative">
                     <li class="nav-item dropdown">
                         <a class="nav-link text-white d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin <img
-                                 src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6"
-                                 alt="" width="32" class="rounded">
+                            Admin <img src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6" alt="" width="32" class="rounded">
                         </a>
                         <ul class="dropdown-menu position-absolute top-0" style="right: 480px !important;">
                             <li><a class="dropdown-item" href="#">Home</a></li>
@@ -112,12 +110,9 @@
                                             <td>********</td>
                                             <td>
                                                 <div class="d-flex gap-1">
-                                                    <button class="btn btn-sm btn-info text-white"><i
-                                                   class="bi bi-eye-fill fs-6"></i></button>
-                                                    <button class="btn btn-warning btn-sm text-white"><i
-                                                   class="bi bi-pencil-square fs-6"></i></button>
-                                                    <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
+                                                    <button class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></button>
+                                                    <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
+                                                    <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -200,12 +195,12 @@
                                 <div class="mb-3">
                                     <label for="jabatan" class="form-label">Jabatan</label>
                                     <select class="form-select" aria-label="Default select example">
-                                <option selected>-- Pilih Jabatan --</option>
-                                <option value="1">Anggota</option>
-                                <option value="2">Bendahara</option>
-                                <option value="3">Wakil Komisaris</option>
-                                <option value="4">Komisaris</option>
-                              </select>
+                                        <option selected>-- Pilih Jabatan --</option>
+                                        <option value="1">Anggota</option>
+                                        <option value="2">Bendahara</option>
+                                        <option value="3">Wakil Komisaris</option>
+                                        <option value="4">Komisaris</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="alamat" class="form-label">Alamat</label>

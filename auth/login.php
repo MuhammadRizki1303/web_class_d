@@ -18,7 +18,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../assets/css/login.css">
 
-  <!--icon-->
+    <!--icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- AOS Animate -->
@@ -88,7 +88,8 @@
                             </div>
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-3" name="password" id="password" required>
+                                <input type="password" class="form-control rounded-3" name="password" id="password"
+                                    required>
                             </div>
                             <div class="text-end">
                                 <button type="submit" class="btn btn-dark bg-slate-900 rounded-3">LOGIN</button>

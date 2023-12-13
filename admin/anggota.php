@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Admin | Kelas TI_Class_D</title>
+    <title>Admin | Kelas TI_Class_D</title>
 
     <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-  <!--icon-->
+    <!--icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- AOS Animate -->
@@ -596,35 +596,35 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
-                              <label for="gambar" class="form-label">Gambar</label>
-                              <input type="file" class="form-control" id="gambar">
+                                <label for="gambar" class="form-label">Gambar</label>
+                                <input type="file" class="form-control" id="gambar">
                             </div>
                             <div class="mb-3">
-                              <label for="nim" class="form-label">NIM</label>
-                              <input type="text" class="form-control" id="nim">
+                                <label for="nim" class="form-label">NIM</label>
+                                <input type="text" class="form-control" id="nim">
                             </div>
                             <div class="mb-3">
-                              <label for="nama" class="form-label">Nama</label>
-                              <input type="text" class="form-control" id="nama">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama">
                             </div>
                             <div class="mb-3">
-                              <label for="jabatan" class="form-label">Jabatan</label>
-                              <select class="form-select" aria-label="Default select example">
-                                <option selected>-- Pilih Jabatan --</option>
-                                <option value="1">Anggota</option>
-                                <option value="2">Bendahara</option>
-                                <option value="3">Wakil Komisaris</option>
-                                <option value="4">Komisaris</option>
-                              </select>
+                                <label for="jabatan" class="form-label">Jabatan</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>-- Pilih Jabatan --</option>
+                                    <option value="1">Anggota</option>
+                                    <option value="2">Bendahara</option>
+                                    <option value="3">Wakil Komisaris</option>
+                                    <option value="4">Komisaris</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                              <label for="alamat" class="form-label">Alamat</label>
-                              <textarea name="alamat" id="alamat" class="form-control" cols="30" rows="3"></textarea>
+                                <label for="alamat" class="form-label">Alamat</label>
+                                <textarea name="alamat" id="alamat" class="form-control" cols="30" rows="3"></textarea>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
-                          </form>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -652,8 +652,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

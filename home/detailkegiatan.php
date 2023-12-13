@@ -30,7 +30,9 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -96,16 +98,34 @@
                 <input type="file" class="form-control" id="gambar">
             </div>
             <article class="mt-2">
-                <p class="text-muted fw-light">Makan-makan bersama setelah ujian akhir semester 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis error nisi exercitationem, suscipit est corrupti sequi optio, hic ipsum modi saepe consectetur numquam libero aliquid
-                    doloribus velit. Ea fuga harum maxime ducimus deleniti autem repellat. Ipsum vero veritatis laborum saepe placeat consequatur earum sit ad excepturi laboriosam nesciunt debitis esse itaque doloribus, assumenda recusandae possimus.
-                    Error eum aut libero quaerat? Cum error cupiditate voluptate porro dolorum id. Voluptate voluptas ad non reiciendis libero. Voluptas velit inventore, ipsa aspernatur, sunt voluptatibus hic eveniet iste iure ullam eos nulla nisi repellat
-                    nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat! Quod quasi alias, minus ad natus nemo delectus culpa perspiciatis totam possimus cumque id quidem iste sequi odit perferendis iusto in deserunt voluptatum quisquam
-                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at, expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo at omnis quibusdam deleniti consectetur
-                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque tempore ea aspernatur minus facilis,
+                <p class="text-muted fw-light">Makan-makan bersama setelah ujian akhir semester 1 Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Facere corporis error nisi exercitationem, suscipit est corrupti
+                    sequi optio, hic ipsum modi saepe consectetur numquam libero aliquid
+                    doloribus velit. Ea fuga harum maxime ducimus deleniti autem repellat. Ipsum vero veritatis laborum
+                    saepe placeat consequatur earum sit ad excepturi laboriosam nesciunt debitis esse itaque doloribus,
+                    assumenda recusandae possimus.
+                    Error eum aut libero quaerat? Cum error cupiditate voluptate porro dolorum id. Voluptate voluptas ad
+                    non reiciendis libero. Voluptas velit inventore, ipsa aspernatur, sunt voluptatibus hic eveniet iste
+                    iure ullam eos nulla nisi repellat
+                    nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat! Quod quasi alias, minus ad
+                    natus nemo delectus culpa perspiciatis totam possimus cumque id quidem iste sequi odit perferendis
+                    iusto in deserunt voluptatum quisquam
+                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at,
+                    expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo
+                    at omnis quibusdam deleniti consectetur
+                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi
+                    illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque
+                    tempore ea aspernatur minus facilis,
                     dolores nemo facere dolor quisquam nulla dolorem eaque. Et atque rem fugiat doloremque?</p>
-                <p class="text-muted fw-light">Nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat! Quod quasi alias, minus ad natus nemo delectus culpa perspiciatis totam possimus cumque id quidem iste sequi odit perferendis iusto in deserunt voluptatum quisquam
-                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at, expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo at omnis quibusdam deleniti consectetur
-                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque tempore ea aspernatur minus facilis,
+                <p class="text-muted fw-light">Nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat!
+                    Quod quasi alias, minus ad natus nemo delectus culpa perspiciatis totam possimus cumque id quidem
+                    iste sequi odit perferendis iusto in deserunt voluptatum quisquam
+                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at,
+                    expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo
+                    at omnis quibusdam deleniti consectetur
+                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi
+                    illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque
+                    tempore ea aspernatur minus facilis,
                     dolores nemo facere dolor quisquam nulla dolorem eaque. Et atque rem fugiat doloremque?</p>
             </article>
 
@@ -122,7 +142,8 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -179,7 +200,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 </body>
 

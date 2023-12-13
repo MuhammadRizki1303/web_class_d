@@ -30,7 +30,9 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -101,8 +103,10 @@
                             </p>
                         </h5>
                         <p class="card-text mt-1"><small class="text-muted">01 Juni 2023</small></p>
-                        <p class="card-text text-truncate">Selamat kepada Dua Mahasiswa Kelas TI-1D yang telah berhasil lolos Pertukaran Mahasiswa Merdeka(PMM) 
-                                                            Rachel Ardana Putra Ginting telah lolos pada Universitas Gadjah Mada dan Muhammad Fadhillah pada Universitas Padjajaran </p>
+                        <p class="card-text text-truncate">Selamat kepada Dua Mahasiswa Kelas TI-1D yang telah berhasil
+                            lolos Pertukaran Mahasiswa Merdeka(PMM)
+                            Rachel Ardana Putra Ginting telah lolos pada Universitas Gadjah Mada dan Muhammad Fadhillah
+                            pada Universitas Padjajaran </p>
                         <a href="../detailberita/LulusPMM.html" class="btn btn-success btn-sm">Lihat</a>
                     </div>
                 </div>
@@ -120,7 +124,8 @@
                             </p>
                         </h5>
                         <p class="card-text mt-1"><small class="text-muted">20-Maret-2023</small></p>
-                        <p class="card-text text-truncate">Salah satu mahasiswa kelas TI-1D berhasil menjadi Finalis KMIPN 2023</p>
+                        <p class="card-text text-truncate">Salah satu mahasiswa kelas TI-1D berhasil menjadi Finalis
+                            KMIPN 2023</p>
                         <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
                     </div>
                 </div>
@@ -168,7 +173,8 @@
                     <div class="position-absolute badge bg-light mx-3 my-3">
                         <a class="text-decoration-none text-dark" href="">Hiburan</a>
                     </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
+                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10"
+                        style="height: 240px;" alt="">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title m-0">
                             <p class="text-decoration-none link-dark text-truncate">
@@ -176,7 +182,8 @@
                             </p>
                         </h5>
                         <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
+                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore consectetur.
                         </p>
                         <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
                     </div>
@@ -187,7 +194,8 @@
                     <div class="position-absolute badge bg-light mx-3 my-3">
                         <a class="text-decoration-none text-dark" href="">Hiburan</a>
                     </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
+                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10"
+                        style="height: 240px;" alt="">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title m-0">
                             <p class="text-decoration-none link-dark text-truncate">
@@ -195,7 +203,8 @@
                             </p>
                         </h5>
                         <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
+                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore consectetur.
                         </p>
                         <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
                     </div>
@@ -206,7 +215,8 @@
                     <div class="position-absolute badge bg-light mx-3 my-3">
                         <a class="text-decoration-none text-dark" href="">Hiburan</a>
                     </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
+                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10"
+                        style="height: 240px;" alt="">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title m-0">
                             <p class="text-decoration-none link-dark text-truncate">
@@ -214,7 +224,8 @@
                             </p>
                         </h5>
                         <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
+                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore consectetur.
                         </p>
                         <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
                     </div>
@@ -232,7 +243,8 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -289,7 +301,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 </body>
 

@@ -47,7 +47,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="home/prestasi.php">Prestasi</a>
-                        
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="home/informasi.php">Informasi</a>
@@ -427,8 +427,8 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/abil.jpg" class="img-fluid rounded"
-                                style="height: 220px; width: 100%;" alt="">
+                            <img src="assets/img/abil.jpg" class="img-fluid rounded" style="height: 220px; width: 100%;"
+                                alt="">
                             <p>
 
                                 <button class="btn border-0" type="button" data-bs-toggle="collapse"
@@ -652,8 +652,8 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/nia.jpeg" class="img-fluid rounded"
-                                style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/nia.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;"
+                                alt="">
                             <p>
 
                                 <button class="btn border-0" type="button" data-bs-toggle="collapse"
@@ -821,8 +821,8 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/sri.jpeg" class="img-fluid rounded"
-                                style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/sri.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;"
+                                alt="">
                             <p>
 
                                 <button class="btn border-0" type="button" data-bs-toggle="collapse"
@@ -1002,7 +1002,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 
 </body>

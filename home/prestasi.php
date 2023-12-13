@@ -31,7 +31,9 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -96,12 +98,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="../assets/img/p.baru.JPG" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="../assets/img/p.baru.JPG" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lomba Badminton Pormatik</h5>
-                                <p class="card-text">Rachel Ardana Putra Ginting dan Muhammad Maulana Meraih juara pertama pada perlombaan badminton pormatik </p>
+                                <p class="card-text">Rachel Ardana Putra Ginting dan Muhammad Maulana Meraih juara
+                                    pertama pada perlombaan badminton pormatik </p>
                                 <p class="card-text"><small class="text-muted">18 Maret 2023</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -116,12 +120,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -136,12 +142,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -156,12 +164,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -176,12 +186,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -196,12 +208,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -216,12 +230,14 @@
                             <div class="position-absolute badge bg-light mx-3 my-3">
                                 <a class="text-decoration-none text-dark" href="">Hiburan</a>
                             </div>
-                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
+                            <img src="https://source.unsplash.com/300x320/?" class="p-2 rounded img-fluid"
+                                style="height:230px; width: 100%" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Lorem, ipsum.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis odio dolore quisquam amet delectus dolorem.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    blanditiis odio dolore quisquam amet delectus dolorem.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <a href="detailprestasi.html" class="btn btn-success btn-sm">Lihat</a>
                             </div>
@@ -241,7 +257,8 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             Send
                         </button>
@@ -298,7 +315,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 
 </body>
