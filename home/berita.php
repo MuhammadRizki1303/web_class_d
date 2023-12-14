@@ -1,3 +1,7 @@
+<?php
+include "../auth/koneksi.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas TI-1D</title>
+    <title>Kelas TI-Class-D</title>
 
     <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
 
@@ -65,8 +69,12 @@
             </div>
         </div>
     </nav>
+    <?php
+    $sql = "SELECT * FROM berita ORDER BY judul";
+    $result = mysqli_query($conn, $sql);
 
-    <div class="container">
+    if ($result) {
+        echo '<div class="container">
 
         <div class="row mt-4 mb-4">
             <div class="col-md-7 mt-auto mb-3 mb-md-0">
@@ -87,141 +95,36 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Akademik</a>
-                    </div>
-                    <img src="../assets/img/piknik.jpg" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Mahasiswa yang lulus PMM 2023
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">01 Juni 2023</small></p>
-                        <p class="card-text text-truncate">Selamat kepada Dua Mahasiswa Kelas TI-1D yang telah berhasil lolos Pertukaran Mahasiswa Merdeka(PMM) 
-                                                            Rachel Ardana Putra Ginting telah lolos pada Universitas Gadjah Mada dan Muhammad Fadhillah pada Universitas Padjajaran </p>
-                        <a href="../detailberita/LulusPMM.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Akademik</a>
-                    </div>
-                    <img src="../assets/img/kmipn.png" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                KMIPN 2023
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">20-Maret-2023</small></p>
-                        <p class="card-text text-truncate">Salah satu mahasiswa kelas TI-1D berhasil menjadi Finalis KMIPN 2023</p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Hiburan</a>
-                    </div>
-                    <img src="../assets/img/pdkt.jpeg" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Reyhan Laptop Baru
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">30 Oktober 2022</small></p>
-                        <p class="card-text text-truncate">Ikut terharu dengan sudah sampainya laptop baru Reyhan</p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row">';
 
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-right">
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo '<div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
                 <div class="card rounded-10 p-3">
                     <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Kuliner</a>
+                        <a class="text-decoration-none text-dark" href="">' . $row['judul'] . '</a>
                     </div>
-                    <img src="../assets/img/bukber.jpeg" class="card-img-top rounded-10" style="height: 240px;" alt="">
+                    <img src="' . $row['foto'] . '" class="card-img-top rounded-10" style="height: 240px;" alt="">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Bukber pertama semester 2
-                            </p>
+                            <p class="text-decoration-none link-dark text-truncate">' . $row['judul'] . '</p>
                         </h5>
-                        <p class="card-text mt-1"><small class="text-muted">10-Maret-2023</small></p>
-                        <p class="card-text text-truncate"> Buka Puasa bersama kelas ti 1D Semester 2
-                        </p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
+                        <p class="card-text mt-1"><small class="text-muted">' . $row['tgl_isi'] . '</small></p>
+                        <p class="card-text text-truncate">' . $row['informasi'] . '</p>
+                        <a href="../detailberita/Detailberita.php?id_berita=' . $row['id_berita'] . '" class="btn btn-success btn-sm">Lihat</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-right">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Hiburan</a>
-                    </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, sequi!
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
-                        </p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-right">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Hiburan</a>
-                    </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, sequi!
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
-                        </p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
-                <div class="card rounded-10 p-3">
-                    <div class="position-absolute badge bg-light mx-3 my-3">
-                        <a class="text-decoration-none text-dark" href="">Hiburan</a>
-                    </div>
-                    <img src="https://source.unsplash.com/300x200/?" class="card-img-top rounded-10" style="height: 240px;" alt="">
-                    <div class="card-body p-0 mt-3">
-                        <h5 class="card-title m-0">
-                            <p class="text-decoration-none link-dark text-truncate">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, sequi!
-                            </p>
-                        </h5>
-                        <p class="card-text mt-1"><small class="text-muted">1 Menit yang lalu</small></p>
-                        <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur.
-                        </p>
-                        <a href="detailkegiatan.html" class="btn btn-success btn-sm">Lihat</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </div>';
+        }
+
+        echo '</div>
+    </div>';
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+    // Close the database connection
+    mysqli_close($conn);
+    ?>
 
     <section id="tell-us" class="tell-us mt-100 my-5">
         <div class="container p-5 bg-violet-100 rounded-10">

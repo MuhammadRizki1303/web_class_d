@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas TI-1D</title>
+    <title>TI-Class-D</title>
 
     <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
 
@@ -29,7 +29,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">TI-Class_D</a>
+            <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,7 +71,7 @@
         <div class="row mt-4 mb-4">
             <div class="col-md-7 mt-auto mb-3 mb-md-0">
                 <p class="text-violet-600 fw-medium mb-1 fs-5">Informasi Kelas</p>
-                <h1 class="fw-bold">Informasi Kelas TI-D</h1>
+                <h1 class="fw-bold">Informasi TI-Class-D</h1>
             </div>
             <div class="col-md-5 mt-auto">
                 <form action="" method="">
