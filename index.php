@@ -110,7 +110,7 @@
                                 <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#23" aria-expanded="false" aria-controls="23">
                                     <h6 class="card-title fw-medium pt-3">Rachel Ardana Putra
                                         Ginting</h6>
-                                    <span class="badge text-bg-success">Komisaris</span>
+                                    <span class="badge text-bg-success">ex-Komisaris SM1-2</span>
                                 </button>
                             </p>
                             <div class="collapse z-3 position-absolute" id="23">
@@ -136,7 +136,8 @@
 
                                 <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#10" aria-expanded="false" aria-controls="10">
                                     <h6 class="card-title fw-medium pt-3">M Akbar Zulfikar</h6>
-                                    <span class="badge text-bg-warning text-white">Wakil Komisaris</span>
+                                    <span class="badge text-bg-warning text-white">ex-Wakil Komisaris SM1-2 & Komisaris
+                                        SM3</span>
                                 </button>
                             </p>
                             <div class="collapse z-3 position-absolute" id="10">
@@ -157,12 +158,35 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/afiyyah.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
-                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#1" aria-expanded="false" aria-controls="1">
-                                <h6 class="card-title fw-medium pt-3">A'fiyyah Salsabillah Nhazalta</h6>
-                                <span class="badge text-bg-primary">Bendahara</span>
+                            <img src="assets/img/agung.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgung" aria-expanded="false" aria-controls="collapseAgung">
+                                <h6 class="card-title fw-medium pt-3">Agung Ramadhan Setiawan</h6>
+                                <span class="badge text-bg-primary">Wakil Komisaris SM3</span>
                             </button>
-                            <div class="collapse z-3 position-absolute" id="1">
+                            <div class="collapse z-3 position-absolute" id="collapseAgung">
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 py-0 text-muted">2022573010081</p>
+                                    <p class="card-text fs-6 text-muted">Pangkalan Susu</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/afiyyah.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfiyyah" aria-expanded="false" aria-controls="collapseAfiyyah">
+                                <h6 class="card-title fw-medium pt-3">A'fiyyah Salsabillah Nhazalta</h6>
+                                <span class="badge text-bg-primary">ex-Bendahara</span>
+                            </button>
+                            <div class="collapse z-3 position-absolute" id="collapseAfiyyah">
                                 <div class="card card-body border-0 shadow-sm">
                                     <p class="card-text fs-6 py-0 text-muted">2022573010003</p>
                                     <p class="card-text fs-6 text-muted">Lhokseumawe</p>
@@ -177,8 +201,12 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+    </section>
+    </div>
+    </div>
     </section>
     <!--anggota-->
     <section id="team" class="team selection-padding">
@@ -197,15 +225,15 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/agung.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
                             <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#2" aria-expanded="false" aria-controls="2">
-                                <h6 class="card-title fw-medium pt-3">Agung Ramadhan Setiawan</h6>
-                                <span class="badge text-bg-secondary">Anggota</span>
+                                <h6 class="card-title fw-medium pt-3">Muhammad Rizki</h6>
+                                <span class="badge text-bg-secondary">Developer</span>
                             </button>
                             <div class="collapse z-3 position-absolute" id="2">
                                 <div class="card card-body border-0 shadow-sm">
-                                    <p class="card-text fs-6 py-0 text-muted">2022573010081</p>
-                                    <p class="card-text fs-6 text-muted">Pangkalan Susu</p>
+                                    <p class="card-text fs-6 py-0 text-muted">2022573010023</p>
+                                    <p class="card-text fs-6 text-muted">Bireuen</p>
                                     <p class="socials d-flex justify-content-evenly mt-5">
                                         <i class="bi bi-twitter"></i>
                                         <i class="bi bi-instagram"></i>
@@ -519,32 +547,6 @@
                                 <div class="card card-body border-0 shadow-sm">
                                     <p class="card-text fs-6 py-0 text-muted">2022573010069</p>
                                     <p class="card-text fs-6 text-muted">Kota Langsa</p>
-                                    <p class="socials d-flex justify-content-evenly mt-5">
-                                        <i class="bi bi-twitter"></i>
-                                        <i class="bi bi-instagram"></i>
-                                        <i class="bi bi-facebook"></i>
-                                        <i class="bi bi-whatsapp"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
-                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
-                        <div class="card-body">
-                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
-                            <p>
-
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#16" aria-expanded="false" aria-controls="16">
-                                    <h6 class="card-title fw-medium pt-3">Muhammad Rizki</h6>
-                                    <span class="badge text-bg-secondary">Anggota</span>
-                                </button>
-                            </p>
-                            <div class="collapse z-3 position-absolute" id="16">
-                                <div class="card card-body border-0 shadow-sm">
-                                    <p class="card-text fs-6 py-0 text-muted">2022573010023</p>
-                                    <p class="card-text fs-6 text-muted">Bireuen</p>
                                     <p class="socials d-flex justify-content-evenly mt-5">
                                         <i class="bi bi-twitter"></i>
                                         <i class="bi bi-instagram"></i>

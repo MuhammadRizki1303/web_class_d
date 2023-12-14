@@ -1,3 +1,24 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "web_class_d";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$id_berita = isset($_GET['id_berita']) ? $_GET['id_berita'] : 1; // Default to 1 if id_berita is not provided
+
+$sql = "SELECT * FROM berita WHERE id_berita = $id_berita";
+$result = $conn->query($sql);
+
+// Close the database connection
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +26,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas TI-1D</title>
+    <title>Kelas TI-Class-D</title>
 
-    <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -41,22 +62,22 @@
                         <a class="nav-link fw-semibold" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  active" href="kegiatan.php">Kegiatan</a>
+                        <a class="nav-link  active" href="../home/kegiatan.php">Kegiatan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="prestasi.php">Prestasi</a>
+                        <a class="nav-link fw-semibold" href="../home/prestasi.php">Prestasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="informasi.php">Informasi</a>
+                        <a class="nav-link fw-semibold" href="../home/informasi.php">Informasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Kalender.php">Kalender</a>
+                        <a class="nav-link fw-semibold" href="../home/Kalender.php">Kalender</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="youtube.php">Youtube</a>
+                        <a class="nav-link fw-semibold" href="../home/youtube.php">Youtube</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="berita.php">Berita</a>
+                        <a class="nav-link fw-semibold" href="../home/berita.php">Berita</a>
                     </li>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -72,8 +93,8 @@
 
         <div class="row mt-4 mb-4">
             <div class="col-md-7 mt-auto mb-3 mb-md-0">
-                <p class="text-violet-600 fw-medium mb-1 fs-5">Rincian Kegiatan</p>
-                <h1 class="fw-bold">Informasi dan Kegiatan</h1>
+                <p class="text-violet-600 fw-medium mb-1 fs-5">Rincian Berita</p>
+                <h1 class="fw-bold">Informasi Berita</h1>
             </div>
             <div class="col-md-5 mt-auto">
                 <form action="" method="">
@@ -88,49 +109,27 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <h3>Piknik Bersama</h3>
-            <p><i class="bi bi-calendar-event"></i> 08 Desember 2022</p>
-            <img src="../assets/img/piknik.jpg" class="w-100 rounded" alt="">
-            <div class="mb-3">
-                <label for="gambar" class="form-label">Gambar</label>
-                <input type="file" class="form-control" id="gambar">
-            </div>
-            <article class="mt-2">
-                <p class="text-muted fw-light">Makan-makan bersama setelah ujian akhir semester 1 Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Facere corporis error nisi exercitationem, suscipit est corrupti
-                    sequi optio, hic ipsum modi saepe consectetur numquam libero aliquid
-                    doloribus velit. Ea fuga harum maxime ducimus deleniti autem repellat. Ipsum vero veritatis laborum
-                    saepe placeat consequatur earum sit ad excepturi laboriosam nesciunt debitis esse itaque doloribus,
-                    assumenda recusandae possimus.
-                    Error eum aut libero quaerat? Cum error cupiditate voluptate porro dolorum id. Voluptate voluptas ad
-                    non reiciendis libero. Voluptas velit inventore, ipsa aspernatur, sunt voluptatibus hic eveniet iste
-                    iure ullam eos nulla nisi repellat
-                    nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat! Quod quasi alias, minus ad
-                    natus nemo delectus culpa perspiciatis totam possimus cumque id quidem iste sequi odit perferendis
-                    iusto in deserunt voluptatum quisquam
-                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at,
-                    expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo
-                    at omnis quibusdam deleniti consectetur
-                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi
-                    illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque
-                    tempore ea aspernatur minus facilis,
-                    dolores nemo facere dolor quisquam nulla dolorem eaque. Et atque rem fugiat doloremque?</p>
-                <p class="text-muted fw-light">Nostrum consectetur! Dolores porro error ex suscipit laboriosam quaerat!
-                    Quod quasi alias, minus ad natus nemo delectus culpa perspiciatis totam possimus cumque id quidem
-                    iste sequi odit perferendis iusto in deserunt voluptatum quisquam
-                    soluta corporis, eius dicta. Dicta rerum minima sequi aperiam voluptate nam laudantium non at,
-                    expedita accusantium cum natus fugiat accusamus id nobis doloribus tempora odio! Modi, qui nihil quo
-                    at omnis quibusdam deleniti consectetur
-                    voluptates praesentium, debitis quisquam perferendis repudiandae suscipit unde quis quas eligendi
-                    illo porro obcaecati ipsam eius possimus reiciendis? Iure, adipisci cum sed animi quod, doloremque
-                    tempore ea aspernatur minus facilis,
-                    dolores nemo facere dolor quisquam nulla dolorem eaque. Et atque rem fugiat doloremque?</p>
-            </article>
-
-        </div>
-        <a href="kegiatan.html" class="btn btn-info text-white mt-5">Kembali</a>
+    <?php
+    if ($result) {
+        while ($beritaData = $result->fetch_assoc()) {
+            echo '<div class="container">
+                <div class="row">
+                    <h3>' . $beritaData['judul'] . '</h3>
+                    <p><i class="bi bi-calendar-event"></i> ' . $beritaData['tgl_isi'] . '</p>
+                    <img src="../assets/img/' . $beritaData['foto'] . '" class="w-100 rounded" alt="">
+                    <article class="mt-2">
+                        <p class="text-muted fw-light">' . $beritaData['informasi'] . '</p>
+                        <!-- ... (your existing content) ... -->
+                    </article>
+                </div>
+            </div>';
+        }
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    ?>
+    </div>
+    <a href="../index.php" class="btn btn-info text-white mt-5">Kembali</a>
     </div>
 
     <section id="tell-us" class="tell-us mt-100 my-5">
@@ -203,7 +202,5 @@
     AOS.init();
     </script>
 </body>
-
-</html>
 
 </html>
