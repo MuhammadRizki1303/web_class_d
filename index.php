@@ -51,7 +51,7 @@
                         <a class="nav-link fw-semibold" href="home/informasi.php">Informasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="home/Kalender.php">Kalender</a>
+                        <a class="nav-link fw-semibold" href="Kalender/index.php">Kalender</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="home/youtube.php">Youtube</a>
@@ -846,19 +846,19 @@
                         </div>
                     </div>
                 </div>
+                <!-- First card -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
-                        <div class="card-b42y">
+                        <div class="card-body">
                             <img src="assets/img/sari.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
                             <p>
-
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#29" aria-expanded="false" aria-controls="29">
-                                    <h6 class="card-t6tle fw-medium py-3">Tri Kumala Sari
-                                    </h6>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="card-title fw-medium py-3">Tri Kumala Sari</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
                             </p>
-                            <div class="collapse z-3 position-absolute" id="29">
+                            <div class="collapse z-3 position-absolute" id="collapse1">
+                                <!-- Content for the first card -->
                                 <div class="card card-body border-0 shadow-sm">
                                     <p class="card-text fs-6 text-muted">2022573010052</p>
                                     <p class="card-text fs-6 text-muted">Merdu</p>
@@ -873,8 +873,174 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+                <!-- Second card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/evana.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="card-title fw-medium py-3">Cut Evana Salsabila</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse2">
+                                <!-- Content for the second card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010085</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/vidya.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="card-title fw-medium py-3">Vidya Ayu Ningtyas</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse3">
+                                <!-- Content for the third card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010053</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/kinan.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="card-title fw-medium py-3">Riski Ananda</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse4">
+                                <!-- Content for the fourth card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010115</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teuku Aldie Aulia -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/aldi.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <h6 class="card-title fw-medium py-3">Teuku Aldie Aulia</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse5">
+                                <!-- Content for the fifth card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010079</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunil Hukmi -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/sunil.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    <h6 class="card-title fw-medium py-3">Sunil Hukmi</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse6">
+                                <!-- Content for the sixth card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010077</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Afifa Lhokseum Dwi Putri -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
+                    <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
+                        <div class="card-body">
+                            <img src="assets/img/afifa.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <p>
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    <h6 class="card-title fw-medium py-3">Afifa Lhokseum Dwi Putri</h6>
+                                    <span class="badge text-bg-secondary">Anggota</span>
+                                </button>
+                            </p>
+                            <div class="collapse z-3 position-absolute" id="collapse7">
+                                <!-- Content for the seventh card -->
+                                <div class="card card-body border-0 shadow-sm">
+                                    <p class="card-text fs-6 text-muted">2022573010002</p>
+                                    <p class="card-text fs-6 text-muted">Lhokseumawe</p>
+                                    <p class="socials d-flex justify-content-evenly mt-5">
+                                        <i class="bi bi-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
     </section>
 
     <section id="tell-us" class="tell-us mt-100 my-5">

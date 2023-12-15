@@ -1,3 +1,6 @@
+<?php
+include "../auth/koneksi.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -104,18 +107,41 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Admin</td>
-                                            <td>********</td>
-                                            <td>
-                                                <div class="d-flex gap-1">
-                                                    <button class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></button>
-                                                    <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                                    <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        <?php
+                                        $query = "SELECT * FROM login";
+                                        $result = mysqli_query($conn, $query); // Mengganti $sql menjadi $query
+
+                                        if ($result) {
+                                            if (mysqli_num_rows($result) > 0) {
+                                                // Loop untuk setiap baris data
+                                                while ($row = mysqli_fetch_assoc($result)) {
+                                                    echo "<tr>
+                <th scope='row'>" . $row["id"] . "</th>
+                <td>" . $row["user"] . "</td>
+                <td>********</td>
+                <td>
+                    <div class='d-flex gap-1'>
+                        <button class='btn btn-sm btn-info text-white'><i class='bi bi-eye-fill fs-6'></i></button>
+                        <button class='btn btn-warning btn-sm text-white'><i class='bi bi-pencil-square fs-6'></i></button>
+                        <button class='btn btn-danger btn-sm text-white' type='button' data-bs-toggle='modal' data-bs-target='#exampleModal'><i class='bi bi-trash fs-6'></i></button>
+                    </div>
+                </td>
+            </tr>";
+                                                }
+                                            } else {
+                                                echo "<tr><td colspan='4'>Tidak ada data pengguna.</td></tr>";
+                                            }
+
+                                            // Tidak perlu tutup koneksi di sini, kecuali jika Anda sudah selesai menggunakan mysqli
+                                        } else {
+                                            // Handle error jika query tidak berhasil
+                                            echo "Error: " . mysqli_error($conn);
+                                        }
+
+                                        // Tutup koneksi di sini jika sudah selesai menggunakan mysqli
+                                        mysqli_close($conn);
+                                        ?>
+
                                     </tbody>
                                 </table>
                             </div>

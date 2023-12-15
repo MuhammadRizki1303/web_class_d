@@ -116,10 +116,9 @@ $conn->close();
                 <div class="row">
                     <h3>' . $beritaData['judul'] . '</h3>
                     <p><i class="bi bi-calendar-event"></i> ' . $beritaData['tgl_isi'] . '</p>
-                    <img src="../assets/img/' . $beritaData['foto'] . '" class="w-100 rounded" alt="">
+                    <img src="' . $beritaData['foto'] . '" class="w-100 rounded" alt="">
                     <article class="mt-2">
                         <p class="text-muted fw-light">' . $beritaData['informasi'] . '</p>
-                        <!-- ... (your existing content) ... -->
                     </article>
                 </div>
             </div>';

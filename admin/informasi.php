@@ -200,31 +200,27 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- Semester 1 -->
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>SENIN</td>
-                                    <td>Praktikum Basis Data lanjut
-                                    </td>
+                                    <td>Praktikum Basis Data lanjut</td>
                                     <td>
                                         <div class="d-flex gap-1">
-
                                             <button class="btn btn-warning btn-sm text-white"><i
                                                     class="bi bi-pencil-square fs-6"></i></button>
-
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>SELASA</td>
-                                    <td>Pemograman Web Dasar, Basis Data Lanjut, Praktikum Algoritma Dan Struktur Data.
+                                    <td>Pemrograman Web Dasar, Basis Data Lanjut, Praktikum Algoritma Dan Struktur Data.
                                     </td>
                                     <td>
                                         <div class="d-flex gap-1">
-
                                             <button class="btn btn-warning btn-sm text-white"><i
                                                     class="bi bi-pencil-square fs-6"></i></button>
-
                                         </div>
                                     </td>
                                 </tr>
@@ -232,28 +228,118 @@
                                     <th scope="row">3</th>
                                     <td>RABU</td>
                                     <td>Pancasila Dan Kewarganegaraan, English For Academic Speaking, Organisasi Dan
-                                        Arsitektur Komputer.
-                                    </td>
+                                        Arsitektur
+                                        Komputer.</td>
                                     <td>
                                         <div class="d-flex gap-1">
-
                                             <button class="btn btn-warning btn-sm text-white"><i
                                                     class="bi bi-pencil-square fs-6"></i></button>
-
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
                                     <td>KAMIS</td>
-                                    <td>Algoritma Dan Struktur Data, Matematika Diskrit, Workshop Web Dasar.
+                                    <td>Algoritma Dan Struktur Data, Matematika Diskrit, Workshop Web Dasar.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Semester 2 -->
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>SENIN</td>
+                                    <td>Praktikum Basis Data lanjut</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>SELASA</td>
+                                    <td>Pemrograman Web Dasar, Basis Data Lanjut, Praktikum Algoritma Dan Struktur Data.
                                     </td>
                                     <td>
                                         <div class="d-flex gap-1">
-
                                             <button class="btn btn-warning btn-sm text-white"><i
                                                     class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>RABU</td>
+                                    <td>Pancasila Dan Kewarganegaraan, English For Academic Speaking, Organisasi Dan
+                                        Arsitektur Komputer.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>KAMIS</td>
+                                    <td>Algoritma Dan Struktur Data, Matematika Diskrit, Workshop Web Dasar.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
 
+                                <!-- Semester 3 -->
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>SENIN</td>
+                                    <td>Rekayasa Perangkat Lunak, Pemrograman Web Lanjut, Konsep Jaringan Komputer.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>SELASA</td>
+                                    <td>Pemrograman Berbasis Object, Praktikum Metode Numerik, Praktikum Pemrograman
+                                        Berbasis Object.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>RABU</td>
+                                    <td>Bahasa Inggris 3, Workshop Web Lanjut, Aljabar Linear.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>KAMIS</td>
+                                    <td>Metode Numerik, Praktikum Konsep Jaringan Komputer.</td>
+                                    <td>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-warning btn-sm text-white"><i
+                                                    class="bi bi-pencil-square fs-6"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -262,25 +348,29 @@
                     </div>
                 </div>
             </div>
-            <!-- Akhir Content -->
         </div>
 
-        <!-- Modal Hapus-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Anda yakin?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex gap-2">
-                        <button type="button" style="width: 100%;" class="btn btn-secondary d-inline"
-                            data-bs-dismiss="modal">Tidak</button>
-                        <button type="button" style="width: 100%;" class="btn btn-primary">Ya</button>
-                    </div>
+
+    </div>
+    <!-- Akhir Content -->
+    </div>
+
+    <!-- Modal Hapus-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Anda yakin?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex gap-2">
+                    <button type="button" style="width: 100%;" class="btn btn-secondary d-inline"
+                        data-bs-dismiss="modal">Tidak</button>
+                    <button type="button" style="width: 100%;" class="btn btn-primary">Ya</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

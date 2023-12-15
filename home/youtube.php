@@ -30,9 +30,7 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,7 +48,7 @@
                         <a class="nav-link fw-semibold" href="informasi.php">Informasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Kalender.php">Kalender</a>
+                        <a class="nav-link fw-semibold" href="../Kalender/index.php">Kalender</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="youtube.php">Youtube</a>
@@ -93,40 +91,28 @@
             <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
                 <div class="card rounded-10 shadow border-0" style="height: 200px;">
                     <div class="card-body p-0">
-                        <iframe class="w-100" height="100%" style="border-radius: 10px;"
-                            src="https://www.youtube.com/embed/nuV5rTJFnM0" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <iframe class="w-100" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/nuV5rTJFnM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
                 <div class="card rounded-10 shadow border-0" style="height: 200px;">
                     <div class="card-body p-0">
-                        <iframe width="100%" height="100%" style="border-radius: 10px;"
-                            src="https://www.youtube.com/embed/edZ-VK2dB_A" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/edZ-VK2dB_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
                 <div class="card rounded-10 shadow border-0" style="height: 200px;">
                     <div class="card-body p-0">
-                        <iframe width="100%" height="100%" style="border-radius: 10px;"
-                            src="https://www.youtube.com/embed/tzZFtxRdVjg" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/tzZFtxRdVjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-lg-4 mb-4" data-aos="fade-left">
                 <div class="card rounded-10 shadow border-0" style="height: 200px;">
                     <div class="card-body p-0">
-                        <iframe width="100%" height="100%" style="border-radius: 10px;"
-                            src="https://www.youtube.com/embed/GGm99iNHjZw" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/GGm99iNHjZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -142,8 +128,7 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -200,7 +185,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 </body>
 
