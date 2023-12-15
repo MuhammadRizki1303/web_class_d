@@ -1,3 +1,6 @@
+<?php
+include "../auth/koneksi.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -11,8 +14,7 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -30,18 +32,14 @@
     <nav class="navbar navbar-expand-lg text-white shadow" style="background-color: #7c3aed;">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">IT Class D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto position-relative">
                     <li class="nav-item dropdown">
-                        <a class="nav-link  d-flex align-items-center gap-2" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin <img
-                                src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6"
-                                alt="" width="32" class="rounded">
+                        <a class="nav-link  d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin <img src="https://us.123rf.com/450wm/regara/regara2007/regara200700137/153083642-gray-avatar-picture-profil-icon-design-vector.jpg?ver=6" alt="" width="32" class="rounded">
                         </a>
                         <ul class="dropdown-menu position-absolute top-0" style="right: 480px !important;">
                             <li><a class="dropdown-item" href="#">Home</a></li>
@@ -61,9 +59,7 @@
             <div class="col-lg-2 px-0" style="min-height: 100vh; background-color: #ede9fe !important;">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -96,8 +92,7 @@
 
                 <div class="row mt-4">
                     <div class="col-md-12 mb-2">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalTambah">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTambah">
                             Tambah Data
                         </button>
                         <table class="table">
@@ -112,471 +107,32 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>A'fiyyah Salsabillah Nhazalta</td>
-                                    <td>Bendahara</td>
-                                    <td>2022573010003</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Agung Ramadhan Setiawan</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010081</td>
-                                    <td>Pangkalan Susu</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Andrian Fakhruza</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010060</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Aura Syaskia</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010005</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Cut Siti Sarah Azkiani</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010007</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Dimas Kurniawan</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010009</td>
-                                    <td>Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Fachrul Rozi Rangkuti</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010011</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Febri Fanisa</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010090</td>
-                                    <td>Bireuen</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Jabal Akbar</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010065</td>
-                                    <td>Kota Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>M Akbar Zulfikar</td>
-                                    <td>Wakil Komisaris</td>
-                                    <td>2022573010093</td>
-                                    <td>Kota Langsa</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Muhammad Abil</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010067</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Muhammad Alfitrah</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010020</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">13</th>
-                                    <td>Muhammad Fadhilla</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010097</td>
-                                    <td>Julok Rayeuk</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">14</th>
-                                    <td>Muhammad Maulana</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010100</td>
-                                    <td>Kota Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">15</th>
-                                    <td>Muhammad Rafli Aulia</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010069</td>
-                                    <td>Kota Langsa</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">16</th>
-                                    <td>Muhammad Rizki</td>
+                                <?php
+                                // ...
 
-                                    <td>Anggota</td>
-                                    <td>2022573010023</td>
-                                    <td>Bireuen</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">17</th>
-                                    <td>Mulyani</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010026</td>
-                                    <td>Kuta Binjei</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">18</th>
-                                    <td>Naomi Natalie BR Sembiring</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010029</td>
-                                    <td>Kota Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">19</th>
-                                    <td>Nia Ramadhani</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010107</td>
-                                    <td>Bireuen</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">20</th>
-                                    <td>Nora Syuhada</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010035</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">21</th>
-                                    <td>Nurul Afiqah Simbolon</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010073</td>
-                                    <td>Kota Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">22</th>
-                                    <td>Nurul Agustina</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010037</td>
-                                    <td>Kota Medan</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">23</th>
-                                    <td>Rachel Ardana Putra Ginting</td>
-                                    <td>Komisaris</td>
-                                    <td>2022573010111</td>
-                                    <td>Pulau Tiga</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">24</th>
-                                    <td>Reyhan Putra Syahmi</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010114</td>
-                                    <td>Padang</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">25</th>
-                                    <td>Safira Dara Sholehah</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010041</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">26</th>
-                                    <td>Sri Mutia</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010009</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">27</th>
-                                    <td>Syahira Marani</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010048</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">28</th>
-                                    <td>Tasya Anisa</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010118</td>
-                                    <td>Lhokseumawe</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">29</th>
-                                    <td>Tri Kumala Sari</td>
-                                    <td>Anggota</td>
-                                    <td>2022573010052</td>
-                                    <td>Merdu</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <button class="btn btn-warning btn-sm text-white"><i
-                                                    class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
+                                $result = $conn->query("SELECT * FROM anggota");
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<tr>";
+                                        echo "<th scope='row'>" . $row['id_anggota'] . "</th>";
+                                        echo "<td>" . $row['nama'] . "</td>";
+                                        echo "<td>" . $row['jabatan'] . "</td>";
+                                        echo "<td>" . $row['nim'] . "</td>";
+                                        echo "<td>" . $row['alamat'] . "</td>";
+                                        echo "<td>";
+                                        echo "<div class='d-flex gap-1'>";
+                                        echo "<button class='btn btn-warning btn-sm text-white'><i class='bi bi-pencil-square fs-6'></i></button>";
+                                        echo "<button class='btn btn-danger btn-sm text-white' type='button' data-bs-toggle='modal' data-bs-target='#exampleModal'><i class='bi bi-trash fs-6'></i></button>";
+                                        echo "</div>";
+                                        echo "</td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "0 results";
+                                }
+
+                                $conn->close();
+                                ?>
                             </tbody>
                         </table>
                     </div>
@@ -586,8 +142,7 @@
         </div>
 
         <!-- Modal Tambah-->
-        <div class="modal fade" id="exampleModalTambah" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="exampleModalTambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -640,8 +195,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex gap-2">
-                        <button type="button" style="width: 100%;" class="btn btn-secondary d-inline"
-                            data-bs-dismiss="modal">Tidak</button>
+                        <button type="button" style="width: 100%;" class="btn btn-secondary d-inline" data-bs-dismiss="modal">Tidak</button>
                         <button type="button" style="width: 100%;" class="btn btn-primary">Ya</button>
                     </div>
                 </div>
@@ -652,8 +206,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
 </body>
 

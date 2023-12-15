@@ -40,8 +40,7 @@ $mysqli->close();
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 
         <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- My CSS -->
         <link rel="stylesheet" href="../assets/css/style.css">
@@ -59,9 +58,7 @@ $mysqli->close();
         <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,7 +76,7 @@ $mysqli->close();
                             <a class="nav-link fw-semibold " href="informasi.php">Informasi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="Kalender.php">Kalender</a>
+                            <a class="nav-link fw-semibold" href="../Kalender/index.php">Kalender</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold" href="youtube.php">Youtube</a>
@@ -107,8 +104,7 @@ $mysqli->close();
                 <div class="col-md-5 mt-auto">
                     <form action="" method="">
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control search" placeholder="Search.." name="search"
-                                value="">
+                            <input type="text" class="form-control search" placeholder="Search.." name="search" value="">
                             <label class="btn bg-violet-600 px-4 py-2" type="submit">
                                 <i class="bi bi-search text-white"></i>
                             </label>
@@ -121,30 +117,26 @@ $mysqli->close();
         <div class="container">
             <div class="row">
                 <?php foreach ($achievements as $achievement) : ?>
-                <div class="col-12 col-md-3 col-lg-6 mb-2" data-aos="fade-right">
-                    <div class="card mb-3 shadow-sm border-0" style="max-width: 550px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <div class="position-absolute badge bg-light mx-3 my-3">
-                                    <a class="text-decoration-none text-dark"
-                                        href="#"><?php echo $achievement['judul']; ?></a>
+                    <div class="col-12 col-md-3 col-lg-6 mb-2" data-aos="fade-right">
+                        <div class="card mb-3 shadow-sm border-0" style="max-width: 550px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="position-absolute badge bg-light mx-3 my-3">
+                                        <a class="text-decoration-none text-dark" href="#"><?php echo $achievement['judul']; ?></a>
+                                    </div>
+                                    <img src="<?php echo $achievement['foto']; ?>" class="p-2 rounded img-fluid" style="height:230px; width: 100%" alt="">
                                 </div>
-                                <img src="<?php echo $achievement['foto']; ?>" class="p-2 rounded img-fluid"
-                                    style="height:230px; width: 100%" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><?php echo $achievement['judul']; ?></h5>
-                                    <p class="card-text"><?php echo $achievement['informasi']; ?></p>
-                                    <p class="card-text"><small
-                                            class="text-muted"><?php echo $achievement['tgl_isi']; ?></small></p>
-                                    <a href="../detailberita/detailprestasi.php?id_prestasi=<?php echo $achievement['id_prestasi']; ?>"
-                                        class="btn btn-success btn-sm">Lihat</a>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $achievement['judul']; ?></h5>
+                                        <p class="card-text"><?php echo $achievement['informasi']; ?></p>
+                                        <p class="card-text"><small class="text-muted"><?php echo $achievement['tgl_isi']; ?></small></p>
+                                        <a href="../detailberita/detailprestasi.php?id_prestasi=<?php echo $achievement['id_prestasi']; ?>" class="btn btn-success btn-sm">Lihat</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -158,8 +150,7 @@ $mysqli->close();
                             <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                         </div>
                         <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                            <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
-                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                                 Send
                             </button>
@@ -216,7 +207,7 @@ $mysqli->close();
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script>
-        AOS.init();
+            AOS.init();
         </script>
 
     </body>
