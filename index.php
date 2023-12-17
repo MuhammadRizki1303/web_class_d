@@ -1,3 +1,29 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "web_class_d";
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+} else {
+    echo "koneksi berhasil";
+}
+
+
+// Fetch data for Pejabat Kelas (Class Officials)
+$sqlOfficials = "SELECT * FROM anggota";
+$resultOfficials = $conn->query($sqlOfficials);
+
+// Fetch data for Anggota (Members)
+$sqlMembers = "SELECT * FROM anggota";
+$resultMembers = $conn->query($sqlMembers);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +58,9 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -104,10 +132,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/rachel.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/rachel.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#23" aria-expanded="false" aria-controls="23">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#23" aria-expanded="false" aria-controls="23">
                                     <h6 class="card-title fw-medium pt-3">Rachel Ardana Putra
                                         Ginting</h6>
                                     <span class="badge text-bg-success">ex-Komisaris SM1-2</span>
@@ -131,10 +161,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-up">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/abay.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/abay.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#10" aria-expanded="false" aria-controls="10">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#10" aria-expanded="false" aria-controls="10">
                                     <h6 class="card-title fw-medium pt-3">M Akbar Zulfikar</h6>
                                     <span class="badge text-bg-warning text-white">ex-Wakil Komisaris SM1-2 & Komisaris
                                         SM3</span>
@@ -158,8 +190,10 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/agung.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
-                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgung" aria-expanded="false" aria-controls="collapseAgung">
+                            <img src="assets/img/agung.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
+                            <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAgung" aria-expanded="false" aria-controls="collapseAgung">
                                 <h6 class="card-title fw-medium pt-3">Agung Ramadhan Setiawan</h6>
                                 <span class="badge text-bg-primary">Wakil Komisaris SM3</span>
                             </button>
@@ -181,8 +215,10 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/afiyyah.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
-                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfiyyah" aria-expanded="false" aria-controls="collapseAfiyyah">
+                            <img src="assets/img/afiyyah.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
+                            <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAfiyyah" aria-expanded="false" aria-controls="collapseAfiyyah">
                                 <h6 class="card-title fw-medium pt-3">A'fiyyah Salsabillah Nhazalta</h6>
                                 <span class="badge text-bg-primary">ex-Bendahara</span>
                             </button>
@@ -225,8 +261,10 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
-                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#2" aria-expanded="false" aria-controls="2">
+                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
+                            <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#2"
+                                aria-expanded="false" aria-controls="2">
                                 <h6 class="card-title fw-medium pt-3">Muhammad Rizki</h6>
                                 <span class="badge text-bg-secondary">Developer</span>
                             </button>
@@ -248,10 +286,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/andrian.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/andrian.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#3" aria-expanded="false" aria-controls="3">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#3"
+                                    aria-expanded="false" aria-controls="3">
                                     <h6 class="card-title fw-medium pt-3">Andrian Fakhruza</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -274,10 +314,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/aura.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/aura.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#4" aria-expanded="false" aria-controls="4">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#4"
+                                    aria-expanded="false" aria-controls="4">
                                     <h6 class="card-title fw-medium pt-3">Aura Syaskia</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -300,10 +342,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/cutsarah.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/cutsarah.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#5" aria-expanded="false" aria-controls="5">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#5"
+                                    aria-expanded="false" aria-controls="5">
                                     <h6 class="card-title fw-medium pt-3">Cut Siti Sarah Azkiani</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -327,10 +371,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/dimas.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/dimas.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#6" aria-expanded="false" aria-controls="6">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#6"
+                                    aria-expanded="false" aria-controls="6">
                                     <h6 class="card-title fw-medium pt-3">Dimas Kurniawan</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -353,10 +399,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/joe.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/joe.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;"
+                                alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#7" aria-expanded="false" aria-controls="7">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#7"
+                                    aria-expanded="false" aria-controls="7">
                                     <h6 class="card-title fw-medium pt-3">Fachrul Rozi Rangkuti</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -379,10 +427,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/febrifanisa.jpg" class="img-fluid rounded" style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/febrifanisa.jpg" class="img-fluid rounded"
+                                style="height: 240px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#8" aria-expanded="false" aria-controls="8">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#8"
+                                    aria-expanded="false" aria-controls="8">
                                     <h6 class="card-title fw-medium pt-3">Febri Fanisa</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -405,10 +455,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/jabal.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/jabal.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#9" aria-expanded="false" aria-controls="9">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#9"
+                                    aria-expanded="false" aria-controls="9">
                                     <h6 class="card-title fw-medium pt-3">Jabal Akbar</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -431,10 +483,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/abil.jpg" class="img-fluid rounded" style="height: 220px; width: 100%;" alt="">
+                            <img src="assets/img/abil.jpg" class="img-fluid rounded" style="height: 220px; width: 100%;"
+                                alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#11" aria-expanded="false" aria-controls="11">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#11" aria-expanded="false" aria-controls="11">
                                     <h6 class="card-title fw-medium pt-3">Muhammad Abil</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -457,10 +511,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/fitrah.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/fitrah.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#12" aria-expanded="false" aria-controls="12">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#12" aria-expanded="false" aria-controls="12">
                                     <h6 class="card-title fw-medium pt-3">Muhammad Alfitrah</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -483,10 +539,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/fadil.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/fadil.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#13" aria-expanded="false" aria-controls="13">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#13" aria-expanded="false" aria-controls="13">
                                     <h6 class="card-title fw-medium pt-3">Muhammad Fadhilla</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -509,10 +567,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/momol.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/momol.jpeg" class="img-fluid rounded"
+                                style="height: 240px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#14" aria-expanded="false" aria-controls="14">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#14" aria-expanded="false" aria-controls="14">
                                     <h6 class="card-title fw-medium pt-3">Muhammad Maulana</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -535,10 +595,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/rafli.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/rafli.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#15" aria-expanded="false" aria-controls="15">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#15" aria-expanded="false" aria-controls="15">
                                     <h6 class="card-title fw-medium pt-3">Muhammad Rafli Aulia</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -561,10 +623,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/mulyani.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/mulyani.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#17" aria-expanded="false" aria-controls="17">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#17" aria-expanded="false" aria-controls="17">
                                     <h6 class="card-title fw-medium pt-3">Mulyani</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -587,10 +651,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/naomi.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/naomi.jpeg" class="img-fluid rounded"
+                                style="height: 240px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#18" aria-expanded="false" aria-controls="18">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#18" aria-expanded="false" aria-controls="18">
                                     <h6 class="card-title fw-medium pt-3">Naomi Natalie BR Sembiring
                                     </h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
@@ -614,10 +680,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/nia.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/nia.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;"
+                                alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#19" aria-expanded="false" aria-controls="19">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#19" aria-expanded="false" aria-controls="19">
 
                                     <h6 class="card-title fw-medium pt-3">Nia Ramadhani</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
@@ -641,10 +709,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/nora.jpeg" class="img-fluid rounded" style="height: 240px; width: 100%;" alt="">
+                            <img src="assets/img/nora.jpeg" class="img-fluid rounded"
+                                style="height: 240px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#20" aria-expanded="false" aria-controls="20">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#20" aria-expanded="false" aria-controls="20">
                                     <h6 class="card-title fw-medium pt-3">Nora Syuhada</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -667,10 +737,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/nurul afiqa.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/nurul afiqa.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#21" aria-expanded="false" aria-controls="21">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#21" aria-expanded="false" aria-controls="21">
                                     <h6 class="card-title fw-medium pt-3">Nurul Afiqah Simbolon</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -693,10 +765,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/nurul agustina.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/nurul agustina.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#22" aria-expanded="false" aria-controls="22">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#22" aria-expanded="false" aria-controls="22">
                                     <h6 class="card-title fw-medium pt-3">Nurul Agustina</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -719,10 +793,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/reyhan dan rizki.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#24" aria-expanded="false" aria-controls="24">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#24" aria-expanded="false" aria-controls="24">
                                     <h6 class="card-title fw-medium pt-3">Reyhan Putra Syahmi</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -745,9 +821,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/safira.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/safira.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#25" aria-expanded="false" aria-controls="25">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#25" aria-expanded="false" aria-controls="25">
                                     <h6 class="card-t6tle fw-medium py-3">Safira Dara Sholehah
                                     </h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
@@ -771,10 +849,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/sri.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/sri.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;"
+                                alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#26" aria-expanded="false" aria-controls="26">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#26" aria-expanded="false" aria-controls="26">
                                     <h6 class="card-t6tle fw-medium py-3">Sri Mutia</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -797,10 +877,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-left">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/syahira.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/syahira.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#27" aria-expanded="false" aria-controls="27">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#27" aria-expanded="false" aria-controls="27">
                                     <h6 class="card-t6tle fw-medium py-3">Syahira Marani</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -823,10 +905,12 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/tasya.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/tasya.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
 
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#28" aria-expanded="false" aria-controls="28">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#28" aria-expanded="false" aria-controls="28">
                                     <h6 class="card-t6tle fw-medium py-3">Tasya Anisa</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -850,9 +934,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/sari.jpeg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/sari.jpeg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                     <h6 class="card-title fw-medium py-3">Tri Kumala Sari</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -878,9 +964,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/evana.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/evana.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                     <h6 class="card-title fw-medium py-3">Cut Evana Salsabila</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -906,9 +994,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/vidya.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/vidya.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                                     <h6 class="card-title fw-medium py-3">Vidya Ayu Ningtyas</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -934,9 +1024,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/kinan.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/kinan.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                     <h6 class="card-title fw-medium py-3">Riski Ananda</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -961,9 +1053,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/aldi.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/aldi.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;"
+                                alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                                     <h6 class="card-title fw-medium py-3">Teuku Aldie Aulia</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -989,9 +1083,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/sunil.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/sunil.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     <h6 class="card-title fw-medium py-3">Sunil Hukmi</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -1017,9 +1113,11 @@
                 <div class="col-12 col-md-6 col-lg-3 mb-4 card-image" data-aos="fade-right">
                     <div class="card text-center border-0 shadow-sm rounded-md" style="height:360px">
                         <div class="card-body">
-                            <img src="assets/img/afifa.jpg" class="img-fluid rounded" style="height: 230px; width: 100%;" alt="">
+                            <img src="assets/img/afifa.jpg" class="img-fluid rounded"
+                                style="height: 230px; width: 100%;" alt="">
                             <p>
-                                <button class="btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                <button class="btn border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
                                     <h6 class="card-title fw-medium py-3">Afifa Lhokseum Dwi Putri</h6>
                                     <span class="badge text-bg-secondary">Anggota</span>
                                 </button>
@@ -1052,7 +1150,8 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -1109,7 +1208,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 
 </body>
