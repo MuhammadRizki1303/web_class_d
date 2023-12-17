@@ -36,19 +36,19 @@ https://github.com/
 - lalu jalankan perintah berikut untuk mengklon repository:
 
 bash
-git clone https://github.com/Agrama26/web_cafe_china.git
+git clone https://github.com/MuhammadRizki1303/web_class_d.git
 
-### Langkah 3: Menjalankan Xampp atau Laragon
+### Langkah 3: Menjalankan Xampp
 
 - Pastikan XAMPP sudah diinstal dan dijalankan.
 - Start Apache dan MySql di XAMPP.
 
 ### Langkah 4: Import Database
 
-- Buka http://localhost/phpmyadmin/ lalu buat new database dengan nama kafe_cina
+- Buka http://localhost/phpmyadmin/ lalu buat new database dengan nama web_class_d
 - Klik Import cari file web_class_d.sql yang sudah anda ambil saat clone sebelumnya lalu klik import
 
 ### Langkah 5: Menjalankan Web
 
 - Pastikan file PHP sudah ada dalam proyek dan bisa diakses.
-- Buka browser dan akses proyek di localhost/php_dasar/web_class_d/
+- Buka browser dan akses proyek di localhost/web_class_d/
