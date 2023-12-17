@@ -29,10 +29,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">TI-Class_D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                data-aos="fade-up" data-aos-duration="200" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,7 +71,7 @@
         <div class="row mt-4 mb-4">
             <div class="col-md-7 mt-auto mb-3 mb-md-0">
                 <p class="text-violet-600 fw-medium mb-1 fs-5">Informasi Kelas</p>
-                <h1 class="fw-bold">Informasi Kelas TI-D</h1>
+                <h1 class="fw-bold">Informasi Kelas TI-Class-D</h1>
             </div>
             <div class="col-md-5 mt-auto">
                 <form action="" method="">
@@ -102,9 +100,7 @@
         <div class="row justify-content-between">
             <di class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#senin" aria-expanded="false" data-aos="fade-up" data-aos-duration="200"
-                        aria-controls="senin">
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#senin" aria-expanded="false" data-aos="fade-up" data-aos-duration="200" aria-controls="senin">
                         Senin
                     </button>
                 </p>
@@ -123,9 +119,7 @@
             </di justify-content-betweenv>
             <di class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#selasa" aria-expanded="false" data-aos="fade-up" data-aos-duration="300"
-                        aria-controls="selasa">
+                    <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse" data-bs-target="#selasa" aria-expanded="false" data-aos="fade-up" data-aos-duration="300" aria-controls="selasa">
                         Selasa
                     </button>
                 </p>
@@ -144,9 +138,7 @@
             </di justify-content-betweenv>
             <div class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-warning w-100 text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#rabu" aria-expanded="false" data-aos="fade-up" data-aos-duration="400"
-                        aria-controls="rabu">
+                    <button class="btn btn-warning w-100 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#rabu" aria-expanded="false" data-aos="fade-up" data-aos-duration="400" aria-controls="rabu">
                         Rabu
                     </button>
                 </p>
@@ -166,8 +158,7 @@
             </div>
             <div class="col-12 col-md-2 col-lg-2 mb-4">
                 <p>
-                    <button class="btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#kamis"
-                        aria-expanded="false" data-aos="fade-up" data-aos-duration="500" aria-controls="kamis">
+                    <button class="btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#kamis" aria-expanded="false" data-aos="fade-up" data-aos-duration="500" aria-controls="kamis">
                         Kamis
                     </button>
                 </p>
@@ -202,13 +193,11 @@
                     <!-- Senin -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#seninSemester1" aria-expanded="true" aria-controls="seninSemester1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninSemester1" aria-expanded="true" aria-controls="seninSemester1">
                                 Senin
                             </button>
                         </h2>
-                        <div id="seninSemester1" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester1">
+                        <div id="seninSemester1" class="accordion-collapse collapse" data-bs-parent="#accordionSemester1">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Praktikum Basis Data lanjut</li>
@@ -220,13 +209,11 @@
                     <!-- Selasa -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#selasaSemester1" aria-expanded="false" aria-controls="selasaSemester1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasaSemester1" aria-expanded="false" aria-controls="selasaSemester1">
                                 Selasa
                             </button>
                         </h2>
-                        <div id="selasaSemester1" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester1">
+                        <div id="selasaSemester1" class="accordion-collapse collapse" data-bs-parent="#accordionSemester1">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Pemograman Web Dasar</li>
@@ -240,13 +227,11 @@
                     <!-- Rabu -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#rabuSemester1" aria-expanded="false" aria-controls="rabuSemester1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabuSemester1" aria-expanded="false" aria-controls="rabuSemester1">
                                 Rabu
                             </button>
                         </h2>
-                        <div id="rabuSemester1" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester1">
+                        <div id="rabuSemester1" class="accordion-collapse collapse" data-bs-parent="#accordionSemester1">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Pancasila Dan Kewarganegaraan</li>
@@ -260,13 +245,11 @@
                     <!-- Kamis -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#kamisSemester1" aria-expanded="false" aria-controls="kamisSemester1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamisSemester1" aria-expanded="false" aria-controls="kamisSemester1">
                                 Kamis
                             </button>
                         </h2>
-                        <div id="kamisSemester1" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester1">
+                        <div id="kamisSemester1" class="accordion-collapse collapse" data-bs-parent="#accordionSemester1">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Algoritma Dan Struktur Data</li>
@@ -296,13 +279,11 @@
                     <!-- Senin -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#seninSemester2" aria-expanded="true" aria-controls="seninSemester2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninSemester2" aria-expanded="true" aria-controls="seninSemester2">
                                 Senin
                             </button>
                         </h2>
-                        <div id="seninSemester2" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester2">
+                        <div id="seninSemester2" class="accordion-collapse collapse" data-bs-parent="#accordionSemester2">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Praktikum Basis Data Lanjut</li>
@@ -316,13 +297,11 @@
                     <!-- Selasa -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#selasaSemester2" aria-expanded="false" aria-controls="selasaSemester2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasaSemester2" aria-expanded="false" aria-controls="selasaSemester2">
                                 Selasa
                             </button>
                         </h2>
-                        <div id="selasaSemester2" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester2">
+                        <div id="selasaSemester2" class="accordion-collapse collapse" data-bs-parent="#accordionSemester2">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Pemrograman Web Lanjut</li>
@@ -335,13 +314,11 @@
                     <!-- Rabu -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#rabuSemester2" aria-expanded="false" aria-controls="rabuSemester2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabuSemester2" aria-expanded="false" aria-controls="rabuSemester2">
                                 Rabu
                             </button>
                         </h2>
-                        <div id="rabuSemester2" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester2">
+                        <div id="rabuSemester2" class="accordion-collapse collapse" data-bs-parent="#accordionSemester2">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Pancasila dan Kewarganegaraan</li>
@@ -355,13 +332,11 @@
                     <!-- Kamis -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#kamisSemester2" aria-expanded="false" aria-controls="kamisSemester2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamisSemester2" aria-expanded="false" aria-controls="kamisSemester2">
                                 Kamis
                             </button>
                         </h2>
-                        <div id="kamisSemester2" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester2">
+                        <div id="kamisSemester2" class="accordion-collapse collapse" data-bs-parent="#accordionSemester2">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Algoritma dan Struktur Data</li>
@@ -391,13 +366,11 @@
                     <!-- Senin -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#seninSemester3" aria-expanded="true" aria-controls="seninSemester3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seninSemester3" aria-expanded="true" aria-controls="seninSemester3">
                                 Senin
                             </button>
                         </h2>
-                        <div id="seninSemester3" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester3">
+                        <div id="seninSemester3" class="accordion-collapse collapse" data-bs-parent="#accordionSemester3">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Rekayasa Perangkat Lunak</li>
@@ -411,13 +384,11 @@
                     <!-- Selasa -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#selasaSemester3" aria-expanded="false" aria-controls="selasaSemester3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selasaSemester3" aria-expanded="false" aria-controls="selasaSemester3">
                                 Selasa
                             </button>
                         </h2>
-                        <div id="selasaSemester3" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester3">
+                        <div id="selasaSemester3" class="accordion-collapse collapse" data-bs-parent="#accordionSemester3">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Pemrograman Berorientasi Objek</li>
@@ -431,13 +402,11 @@
                     <!-- Rabu -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#rabuSemester3" aria-expanded="false" aria-controls="rabuSemester3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rabuSemester3" aria-expanded="false" aria-controls="rabuSemester3">
                                 Rabu
                             </button>
                         </h2>
-                        <div id="rabuSemester3" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester3">
+                        <div id="rabuSemester3" class="accordion-collapse collapse" data-bs-parent="#accordionSemester3">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Bahasa Inggris 3</li>
@@ -451,13 +420,11 @@
                     <!-- Kamis -->
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#kamisSemester3" aria-expanded="false" aria-controls="kamisSemester3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kamisSemester3" aria-expanded="false" aria-controls="kamisSemester3">
                                 Kamis
                             </button>
                         </h2>
-                        <div id="kamisSemester3" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionSemester3">
+                        <div id="kamisSemester3" class="accordion-collapse collapse" data-bs-parent="#accordionSemester3">
                             <div class="accordion-body">
                                 <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Metode Numerik</li>
@@ -480,8 +447,7 @@
                             <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                         </div>
                         <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                            <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
-                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                                 <i class="fa-regular fa-paper-plane me-1"></i>
                                 Send
@@ -538,7 +504,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script>
-        AOS.init();
+            AOS.init();
         </script>
 
 </body>

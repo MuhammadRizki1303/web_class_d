@@ -52,3 +52,8 @@ git clone https://github.com/MuhammadRizki1303/web_class_d.git
 
 - Pastikan file PHP sudah ada dalam proyek dan bisa diakses.
 - Buka browser dan akses proyek di localhost/web_class_d/
+
+#### Pasword dan email admin
+
+- email = admin@gmail.com
+- password = admin123
