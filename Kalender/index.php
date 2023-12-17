@@ -9,8 +9,22 @@ include "../auth/koneksi.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduling</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.min.css">
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
@@ -197,6 +211,75 @@ include "../auth/koneksi.php";
     <?php
     if (isset($conn)) $conn->close();
     ?>
+    <section id="tell-us" class="tell-us mt-100 my-5">
+        <div class="container p-5 bg-violet-100 rounded-10">
+            <div class="row py-5 text-center justify-content-center align-items-center">
+                <div class="col-sm-6">
+                    <div data-aos="fade-down" data-aos-duration="1000">
+                        <p class="text-green fw-medium mb-1">Stay Connected</p>
+                        <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
+                    </div>
+                    <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
+                            <i class="fa-regular fa-paper-plane me-1"></i>
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-5">
+        <footer class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-0 py-5 my-2 border-top">
+            <div class="col">
+                <a href="/" class="d-flex align-items-center mb-4 link-dark text-decoration-none">
+                    <h3 class="font-weight">TI-Class-D</h3>
+                </a>
+                <p class="text-muted lh-sm">Buket Rata, Lhokseumawe
+                </p>
+                <p class="text-muted lh-sm">&copy; Kelompok 3 WW</p>
+            </div>
+
+            <div class="col ms-auto">
+                <h6 class="fw-bold mb-2">Contact Us</h6>
+                <ul class="nav flex-column mb-3">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">
+                            <i class="fa-regular fa-envelope me-1"></i> itoned@gmail.com
+                        </a>
+                    </li>
+                </ul>
+
+                <h6 class="fw-bold mb-2">Official Partners Website</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politeknik Negeri
+                            Lhokseumawe</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teknologi Informasi dan
+                            Komputer</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teknik Informatika</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teknologi Rekayasa
+                            Komputer Jaringan</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teknologi Rekayasa
+                            Multimedia</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- AOS Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    AOS.init();
+    </script>
 </body>
 <script>
 var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
