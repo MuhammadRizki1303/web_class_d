@@ -39,45 +39,56 @@
                     <div class="card-body">
                         <?php
                         require_once('koneksi.php');
-                            session_start();
-                            function logout() {
-                                session_unset();
-                                session_destroy();
-                                setcookie("user_role", "", time() - 3600, "/"); // Hapus cookie
-                            }
-                            
-                            // Jika admin ingin logout
-                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
-                                logout();
-                                header("Location: ../auth/login.php");
-                                exit();
+                        session_start();
+
+                        if (isset($_SESSION["logout_message"])) {
+                            echo "<p class='text-info'>" . $_SESSION["logout_message"] . "</p>";
+                            unset($_SESSION["logout_message"]); // Hapus pesan setelah ditampilkan
+                        }
+                        function logout()
+                        {
+                            session_unset();
+                            session_destroy();
+                            setcookie("user_role", "", time() - 3600, "/"); // Hapus cookie
+                        }
+
+                        // Jika admin ingin logout
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
+                            logout();
+                            $_SESSION["logout_message"] = "Anda berhasil Logout dari admin";
+                            header("Location: ../auth/login.php");
+                            exit();
+                        }
+
+
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                            // Periksa apakah formulir dikirim
+                            $email = $_POST["email"];
+                            $password = $_POST["password"];
+
+                            // Gantilah ini dengan kredensial pengguna aktual Anda
+                            $sql = "SELECT * FROM login WHERE user = '$email'";
+                            $result = $conn->query($sql);
+
+                            if (!$result) {
+                                die("Kesalahan kueri: " . $conn->error);
                             }
 
-                            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                // Periksa apakah formulir dikirim
-                                $email = $_POST["email"];
-                                $password = $_POST["password"];
+                            if ($result->num_rows > 0) {
+                                $row = $result->fetch_assoc();
+                                $hashedPassword = $row["pass"];
 
-                                // Gantilah ini dengan kredensial pengguna aktual Anda
-                                $id = 1;
-                                $adminUser = "admin@gmail.com";
-                                $adminPassword = "admin123";
-                                $sql = "SELECT * FROM login WHERE id='$id'";
-                                $result = $conn->query($sql);
-                                if ($result->num_rows > 0) {
-                                    $_SESSION["user"] = "admin";
+                                // Periksa kecocokan password
+                                if (password_verify($password, $hashedPassword)) {
+                                    // Password benar
+                                    $_SESSION["user"] = $row["user"];
                                     header("Location: ../admin/dashboard.php");
                                     exit();
                                 } else {
                                     echo "<p class='text-danger'>Username atau password salah</p>";
                                 }
-                            }
-
-                            if (isset($_SESSION["user"])) {
-                                if ($_SESSION["user"] == "admin") {
-                                    echo "<p class='text-info'>Anda telah logout dari halaman admin. Silakan login kembali.</p>";
-                                    session_unset();
-                                    session_destroy();
+                            } else {
+                                echo "<p class='text-danger'>Username atau password salah</p>";
                             }
                         }
                         ?>
@@ -88,8 +99,7 @@
                             </div>
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-3" name="password" id="password"
-                                    required>
+                                <input type="password" class="form-control rounded-3" name="password" id="password" required>
                             </div>
                             <div class="text-end">
                                 <button type="submit" class="btn btn-dark bg-slate-900 rounded-3">LOGIN</button>

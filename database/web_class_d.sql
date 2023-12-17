@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Des 2023 pada 06.29
+-- Waktu pembuatan: 17 Des 2023 pada 18.46
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.0.19
 
@@ -132,7 +132,7 @@ INSERT INTO `kegiatan` (`id_kegiatan`, `judul`, `foto`, `tgl_isi`, `informasi`) 
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
   `user` varchar(25) NOT NULL,
-  `pass` varchar(10) NOT NULL,
+  `pass` varchar(100) NOT NULL,
   `tgl_isi` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -141,7 +141,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `user`, `pass`, `tgl_isi`) VALUES
-(1, 'admin@gmail.com', 'admin123', '2023-11-28');
+(1, 'admin@gmail.com', '$2y$10$ZnvguWr0A8vV/.DXWIcQQOeTnKwmkBYD83VdZtA9Sbc/IQLfx.4te', '2023-11-28');
 
 -- --------------------------------------------------------
 
@@ -186,7 +186,8 @@ INSERT INTO `schedule_list` (`id`, `title`, `description`, `start_datetime`, `en
 (1, 'Sample 101', 'This is a sample schedule only.', '2022-01-10 10:30:00', '2022-01-11 18:00:00'),
 (2, 'Sample 102', 'Sample Description 102', '2022-01-08 09:30:00', '2022-01-08 11:30:00'),
 (4, 'Sample 102', 'Sample Description', '2022-01-12 14:00:00', '2022-01-12 17:00:00'),
-(5, 'testing', 'testing', '2023-12-19 20:55:00', '2023-12-19 20:55:00');
+(5, 'testing', 'testing', '2023-12-19 20:55:00', '2023-12-19 20:55:00'),
+(6, 'testing', 'testing 2', '2023-12-18 22:00:00', '2023-12-20 22:00:00');
 
 --
 -- Indexes for dumped tables
@@ -266,7 +267,7 @@ ALTER TABLE `prestasi`
 -- AUTO_INCREMENT untuk tabel `schedule_list`
 --
 ALTER TABLE `schedule_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
