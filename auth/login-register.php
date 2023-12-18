@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelas TI Class D</title>
 
-    <link rel="shortcut icon" href="assets/img/tid.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/tid.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -41,32 +41,11 @@
                         require_once('koneksi.php');
                         session_start();
 
-                        if (isset($_SESSION["logout_message"])) {
-                            echo "<p class='text-info'>" . $_SESSION["logout_message"] . "</p>";
-                            unset($_SESSION["logout_message"]); // Hapus pesan setelah ditampilkan
-                        }
-                        function logout()
-                        {
-                            session_unset();
-                            session_destroy();
-                            setcookie("user_role", "", time() - 3600, "/"); // Hapus cookie
-                        }
-
-                        // Jika admin ingin logout
-                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
-                            logout();
-                            $_SESSION["logout_message"] = "Anda berhasil Logout dari admin";
-                            header("Location: ../auth/login.php");
-                            exit();
-                        }
-
-
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                            // Periksa apakah formulir dikirim
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
+                            // Proses login
+                            // Gantilah ini dengan logika login Anda
                             $email = $_POST["email"];
                             $password = $_POST["password"];
-
-                            // Gantilah ini dengan kredensial pengguna aktual Anda
                             $sql = "SELECT * FROM login WHERE user = '$email'";
                             $result = $conn->query($sql);
 
@@ -78,17 +57,37 @@
                                 $row = $result->fetch_assoc();
                                 $hashedPassword = $row["pass"];
 
-                                // Periksa kecocokan password
                                 if (password_verify($password, $hashedPassword)) {
-                                    // Password benar
                                     $_SESSION["user"] = $row["user"];
-                                    header("Location: ../admin/dashboard.php");
-                                    exit();
+
+                                    if ($row["jabatan"] == "Admin") {
+                                        header("Location: ../admin/dashboard.php");
+                                        exit();
+                                    } else {
+                                        header("Location: ../index.php");
+                                        exit();
+                                    }
                                 } else {
                                     echo "<p class='text-danger'>Username atau password salah</p>";
                                 }
                             } else {
                                 echo "<p class='text-danger'>Username atau password salah</p>";
+                            }
+                        }
+
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
+                            // Proses registrasi
+                            // Gantilah ini dengan logika registrasi Anda
+                            $email = $_POST["email"];
+                            $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+                            $jabatan = $_POST["jabatan"];
+
+                            $sql = "INSERT INTO login (user, pass, jabatan, tgl_isi) VALUES ('$email', '$password', '$jabatan', NOW())";
+
+                            if ($conn->query($sql) === TRUE) {
+                                $registrationSuccess = "Registrasi berhasil!";
+                            } else {
+                                $registrationError = "Error: " . $sql . "<br>" . $conn->error;
                             }
                         }
                         ?>
@@ -102,7 +101,30 @@
                                 <input type="password" class="form-control rounded-3" name="password" id="password" required>
                             </div>
                             <div class="text-end">
-                                <button type="submit" class="btn btn-dark bg-slate-900 rounded-3">LOGIN</button>
+                                <button type="submit" class="btn btn-dark bg-slate-900 rounded-3" name="login">LOGIN</button>
+                            </div>
+                        </form>
+
+                        <hr>
+
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control rounded-3" name="email" id="email" autofocus>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control rounded-3" name="password" id="password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jabatan" class="form-label">Jabatan</label>
+                                <select class="form-select rounded-3" name="jabatan" id="jabatan" required>
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-dark bg-slate-900 rounded-3" name="register">REGISTER</button>
                             </div>
                         </form>
                     </div>
@@ -110,7 +132,11 @@
             </div>
         </div>
     </div>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+        <!-- ... (isi footer) -->
+    </footer>
+    <!-- ... (script dan tag penutup HTML) -->
 </body>
 
 </html>
