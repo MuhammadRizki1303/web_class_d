@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Des 2023 pada 18.46
+-- Waktu pembuatan: 18 Des 2023 pada 16.14
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.0.19
 
@@ -133,15 +133,17 @@ CREATE TABLE `login` (
   `id` int(11) NOT NULL,
   `user` varchar(25) NOT NULL,
   `pass` varchar(100) NOT NULL,
-  `tgl_isi` date NOT NULL
+  `tgl_isi` date NOT NULL,
+  `jabatan` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `login`
 --
 
-INSERT INTO `login` (`id`, `user`, `pass`, `tgl_isi`) VALUES
-(1, 'admin@gmail.com', '$2y$10$ZnvguWr0A8vV/.DXWIcQQOeTnKwmkBYD83VdZtA9Sbc/IQLfx.4te', '2023-11-28');
+INSERT INTO `login` (`id`, `user`, `pass`, `tgl_isi`, `jabatan`) VALUES
+(1, 'admin@gmail.com', '$2y$10$ZnvguWr0A8vV/.DXWIcQQOeTnKwmkBYD83VdZtA9Sbc/IQLfx.4te', '2023-11-28', 'Admin'),
+(5, 'user@gmail.com', '$2y$10$SK6kn1OJi0N/mHutQTbEru58LUxg8I3kW9OKyxmQQr43WGzzEnNWy', '2023-12-18', 'user');
 
 -- --------------------------------------------------------
 
@@ -255,7 +257,7 @@ ALTER TABLE `kegiatan`
 -- AUTO_INCREMENT untuk tabel `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `prestasi`
