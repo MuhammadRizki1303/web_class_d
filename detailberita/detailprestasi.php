@@ -30,7 +30,9 @@
     <nav class="navbar navbar-expand-lg bpy-3 mb-3 bg-transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">TI-Class-D</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -127,7 +129,7 @@
             </article>
 
         </div>
-        <a href="prestasi.html" class="btn btn-info text-white mt-5">Kembali</a>
+        <a href="../home/prestasi.php" class="btn btn-info text-white mt-5">Kembali</a>
     </div>
 
     <section id="tell-us" class="tell-us mt-100 my-5">
@@ -139,7 +141,8 @@
                         <h2 class="h1 fw-bold mb-2">Keep In Touch With Us<span>.</span></h2>
                     </div>
                     <div class="input-group mt-3 shadow rounded-10" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control py-3 px-3 border-0" placeholder="Tell us something"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary btn-cta btn-cta" type="button" id="button-addon2">
                             <i class="fa-regular fa-paper-plane me-1"></i>
                             Send
@@ -196,7 +199,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 </body>
 

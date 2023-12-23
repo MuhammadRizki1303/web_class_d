@@ -116,7 +116,7 @@ if (isset($_GET['id_kegiatan'])) {
             </article>
 
         </div>
-        <a href="../index.php" class="btn btn-info text-white mt-5">Kembali</a>
+        <a href="../home/kegiatan.php" class="btn btn-info text-white mt-5">Kembali</a>
     </div>
 
 
