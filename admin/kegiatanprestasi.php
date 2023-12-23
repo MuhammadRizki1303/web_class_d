@@ -1,3 +1,6 @@
+<?php
+include "../auth/koneksi.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -99,90 +102,81 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Kegiatan</th>
                                     <th scope="col">Keterangan</th>
-                                    <th scope="col">Kategori</th>
                                     <th scope="col">Tanggal</th>
                                     <th scope="col">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Piknik Bersama</td>
-                                    <td>Makan-makan bersama setelah ujian akhir s..</td>
-                                    <td>Kegiatan</td>
-                                    <td>08 Desember 2022</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <a href="detailkegiatanprestasi.html" class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></a>
-                                            <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>PORMATIK</td>
-                                    <td>Lomba Tarik Tambang</td>
-                                    <td>Kegiatan</td>
-                                    <td>20 Maret 2023</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <a href="detailkegiatanprestasi.html" class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></a>
-                                            <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>PDKT TIK 2022</td>
-                                    <td>Mengikuti agenda kegiatan Pelatihan Dasar Kepemimpinan Terpadu Jurusan TIK Tahun
-                                        2022</td>
-                                    <td>Kegiatan</td>
-                                    <td>30 Oktober 2022</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <a href="detailkegiatanprestasi.html" class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></a>
-                                            <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td> Bukber Pertama Semester 2</td>
-                                    <td>Buka Puasa bersama kelas ti 1D Semester 2</td>
-                                    <td>Kegiatan</td>
-                                    <td>10 Maret 2023</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <a href="detailkegiatanprestasi.html" class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></a>
-                                            <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Lomba Badminton Pormatik</td>
-                                    <td>Rachel Ardana Putra Ginting dan Muhammad Maulana Meraih juara pertama pada
-                                        perlombaan badminton pormatik</td>
-                                    <td>Prestasi</td>
-                                    <td>18 Maret 2023</td>
-                                    <td>
-                                        <div class="d-flex gap-1">
-                                            <a href="detailkegiatanprestasi.html" class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill fs-6"></i></a>
-                                            <button class="btn btn-warning btn-sm text-white"><i class="bi bi-pencil-square fs-6"></i></button>
-                                            <button class="btn btn-danger btn-sm text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash fs-6"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <?php
+                                $resultKegiatan = $conn->query("SELECT * FROM kegiatan");
+                                if ($resultKegiatan->num_rows > 0) {
+                                    while ($row = $resultKegiatan->fetch_assoc()) {
+                                        echo "<tr>";
+                                        echo "<th scope='row'>" . $row["id_kegiatan"] . "</th>";
+                                        echo "<td>" . $row["judul"] . "</td>";
+                                        echo "<td>" . $row["informasi"] . "</td>";
+                                        echo "<td>" . $row["tgl_isi"] . "</td>";
+                                        echo "<td>
+                                                <a href='proses_editt.php?id_kegiatan={$row['id_kegiatan']}'>Edit</a>
+                                                <a href='#' data-bs-toggle='modal' data-bs-target='#exampleModal' onclick='setSelectedId({$row['id_kegiatan']}, null)'>Hapus</a>
+                                            </td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <!-- Akhir Content -->
+
+            <!-- Content Prestasi -->
+            <div class="col-lg-10 p-4">
+                <h5>Prestasi</h5>
+
+                <div class="row mt-4">
+                    <div class="col-md-12 mb-2">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTambah">
+                            Tambah Data
+                        </button>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Prestasi</th>
+                                    <th scope="col">Keterangan</th>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $resultPrestasi = $conn->query("SELECT * FROM prestasi");
+                                if ($resultPrestasi->num_rows > 0) {
+                                    while ($row = $resultPrestasi->fetch_assoc()) {
+                                        echo "<tr>";
+                                        echo "<th scope='row'>" . $row["id_prestasi"] . "</th>";
+                                        echo "<td>" . $row["judul"] . "</td>";
+                                        echo "<td>" . $row["informasi"] . "</td>";
+                                        echo "<td>" . $row["tgl_isi"] . "</td>";
+                                        echo "<td>
+                                                <a href='proses_editt.php?id_prestasi={$row['id_prestasi']}'>Edit</a>
+                                                <a href='#' data-bs-toggle='modal' data-bs-target='#exampleModal' onclick='setSelectedId(null, {$row['id_prestasi']})'>Hapus</a>
+                                            </td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Modal Tambah-->
@@ -194,22 +188,23 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form action="proses_tambah.php" method="post" enctype="multipart/form-data">
+
                             <div class="mb-3">
                                 <label for="gambar" class="form-label">Gambar</label>
-                                <input type="file" class="form-control" id="gambar">
+                                <input type="file" class="form-control" id="gambar" name="gambar">
                             </div>
                             <div class="mb-3">
                                 <label for="judul" class="form-label">Judul</label>
-                                <input type="text" class="form-control" id="judul">
+                                <input type="text" class="form-control" id="judul" name="judul">
                             </div>
                             <div class="mb-3">
                                 <label for="tanggal" class="form-label">Tanggal</label>
-                                <input type="date" class="form-control" id="tanggal">
+                                <input type="date" class="form-control" id="tanggal" name="tanggal">
                             </div>
                             <div class="mb-3">
                                 <label for="kategori" class="form-label">Kategori</label>
-                                <select class="form-select" id="kategori" aria-label="Default select example">
+                                <select class="form-select" id="kategori" name="kategori" aria-label="Default select example">
                                     <option selected>-- Pilih Kategori --</option>
                                     <option value="1">Kegiatan</option>
                                     <option value="2">Prestasi</option>
@@ -217,7 +212,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="keterangan" class="form-label">Keterangan</label>
-                                <textarea name="keterangan" id="keterangan" class="form-control" cols="30" rows="3"></textarea>
+                                <textarea name="informasi" id="informasi" class="form-control" cols="30" rows="3"></textarea>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <button type="submit" class="btn btn-primary">Simpan</button>
@@ -228,7 +223,7 @@
             </div>
         </div>
 
-        <!-- Modal Hapus-->
+        <!-- Modal Hapus -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -238,15 +233,40 @@
                     </div>
                     <div class="modal-body d-flex gap-2">
                         <button type="button" style="width: 100%;" class="btn btn-secondary d-inline" data-bs-dismiss="modal">Tidak</button>
-                        <button type="button" style="width: 100%;" class="btn btn-primary">Ya</button>
+                        <button type="button" style="width: 100%;" class="btn btn-primary" onclick="konfirmasiHapus(selectedPrestasi, selectedKegiatan)">Ya</button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
+    <script>
+        var selectedKegiatan = null;
+        var selectedPrestasi = null;
+
+        function setSelectedId(kegiatanId, prestasiId) {
+            selectedKegiatan = kegiatanId;
+            selectedPrestasi = prestasiId;
+        }
+
+        function konfirmasiHapus() {
+            // Ganti URL sesuai dengan file proses_delete.php
+            var url = 'proses_delete.php?';
+
+            if (selectedKegiatan !== null) {
+                url += 'id_kegiatan=' + selectedKegiatan;
+            } else if (selectedPrestasi !== null) {
+                url += 'id_prestasi=' + selectedPrestasi;
+            }
+
+            window.location.href = url;
+        }
+    </script>
+
+
 </body>
 
 </html>

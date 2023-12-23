@@ -4,7 +4,7 @@
 
 Anggota :
 
-1. Muhammad Rizki
+1. Muhammad Rizki (Ketua Kelompok)
 2. Zamhur
 3. Nurul Agustina
 4. Tri Kumala Sari
@@ -25,18 +25,10 @@ Pastikan perangkat Anda sudah terinstal dengan perangkat lunak berikut:
 
 ### Langkah 2: Clone Repository
 
-- Pastikan anda sudah memiliki akun GitHub
-- Jika belum silahkan buat terlebih dahulu
-
-bash
-https://github.com/
-
-- Lalu buka terminal atau command prompt bisa juga menggunakan gitbash,
-- untuk mempermudah anda bisa membuka terminal atau gitbash langsung pada Visual Studio Code anda langsung,
+- Clone repository, Lalu buka terminal atau command prompt bisa juga menggunakan gitbash,
+- untuk mempermudah anda bisa membuka terminal atau gitbash langsung pada Visual Studio Code anda,
 - lalu jalankan perintah berikut untuk mengklon repository:
-
-bash
-git clone https://github.com/MuhammadRizki1303/web_class_d.git
+  git clone https://github.com/MuhammadRizki1303/web_class_d.git
 
 ### Langkah 3: Menjalankan Xampp
 
@@ -52,8 +44,6 @@ git clone https://github.com/MuhammadRizki1303/web_class_d.git
 
 - Pastikan file PHP sudah ada dalam proyek dan bisa diakses.
 - Buka browser dan akses proyek di localhost/web_class_d/
+- jika anda belum punya akun silahkan registrasi terlebih dahulu, jika sudah anda dapat login baik itu di halaman user maupun admin.
 
-#### Pasword dan email admin
-
-- email = admin@gmail.com
-- password = admin123
+  ##### TERIMA KASIH

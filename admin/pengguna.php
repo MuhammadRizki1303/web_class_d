@@ -91,9 +91,6 @@ include "../auth/koneksi.php";
                 <h5>Pengguna</h5>
                 <div class="row mt-4">
                     <div class="col-md-12 mb-2">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTambah">
-                            Tambah Pengguna
-                        </button>
 
                         <div class="row mt-4">
                             <div class="col-md-12 mb-2">
@@ -146,37 +143,6 @@ include "../auth/koneksi.php";
                         </div>
                     </div>
                     <!-- Akhir Content -->
-                </div>
-
-                <!-- Modal Tambah-->
-                <div class="modal fade" id="exampleModalTambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Pengguna</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="Nama" class="form-label">Nama</label>
-                                        <input type="text" class="form-control" id="Nama">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="Aksi" class="form-label">Password</label>
-                                        <input type="Text" class="form-control" id="Aksi">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="keterangan" class="form-label">Aksi</label>
-                                        <textarea name="keterangan" id="keterangan" class="form-control" cols="30" rows="3"></textarea>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary">Simpan</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Modal Hapus-->
